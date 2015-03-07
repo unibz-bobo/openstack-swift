@@ -1,0 +1,18 @@
+After installing it these are the steps:
+
+Get the authentication token:
+curl -i -H "X-Auth-User: test:tester" -H "X-Auth-Key: testing" http://localhost:8080/auth/v1.0/
+
+Create a container for objects:
+curl -H "X-Auth-Token: AUTH_tk0e23e807dd064f678d27e8c0aef2facd" -X PUT http://localhost:8080/v1/AUTH_test/lorenzo
+
+Put some data:
+curl -H "X-Auth-Token: AUTH_tk0e23e807dd064f678d27e8c0aef2facd" -H "Content-Length: 1" --data "C" -X PUT http://localhost:8080/v1/AUTH_test/lorenzo/an_object_for_lorenzo
+
+Get your data (finally :) ):
+
+curl -H "X-Auth-Token: AUTH_tk0e23e807dd064f678d27e8c0aef2facd" -X GET http://localhost:8080/v1/AUTH_test/lorenzo/an_object_for_lorenzo
+
+
+06/03/2014
+Lorenzo

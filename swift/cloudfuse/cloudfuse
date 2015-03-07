@@ -1,0 +1,5 @@
+username=system:root
+api_key=testpass
+password=testpass
+authurl=http://10.10.242.55:8080/auth/v1.0/
+cache_timeout=60

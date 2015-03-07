@@ -1,0 +1,11 @@
+So, basically enabling a couple of services on the same machine is costly in terms of RAM
+
+- Increase SWAP -> (This leads to slow responses due to SD card being slow actually)
+    Yes sure this is the first attempt. But once everything is up and running, we shall
+    deploy different services on different machines
+    For example assigning 1-10 machines for every service
+
+    Swap is by default 100 mb on the raspberry. We give it at least 300 mb (3x)
+    sudo nano /etc/dphys-swapfile
+
+    

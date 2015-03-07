@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Example 1
+# Create container (if not exists)
+# Store a character
+# Get it back
+
+# Project: Thesis !
+# Lorenzo Miori (C) 2014
+
+source examples_configuration.sh
+
+CONTAINER="lorenzo"
+OBJECT_NAME="an_object_for_lorenzo"
+
+function header_get_by_name() {
+    echo "$1" | tr -d '\r' | sed -En 's/^'$2': (.*)/\1/p'
+}
+
+# Get the authentication token
+AUTHENTICATION=$(curl -s -i -H "X-Auth-User: $USER_AUTHENTICATION" -H "X-Auth-Key: $KEY_AUTHENTICATION" $URL_AUTHENTICATION)
+
+XSTORAGEURL=`header_get_by_name "$AUTHENTICATION" X-Storage-Url`
+XAUTHTOKEN=`header_get_by_name "$AUTHENTICATION" X-Auth-Token`
+echo "$XSTORAGEURL"
+echo "$XAUTHTOKEN"
+
+# Create a container for objects
+curl -H "X-Auth-Token: $XAUTHTOKEN" -X PUT $XSTORAGEURL/$CONTAINER
+
+# Put a single character
+curl -H "X-Auth-Token: $XAUTHTOKEN" -H "Content-Length: 1" --data "C" -X PUT $XSTORAGEURL/$CONTAINER/$OBJECT_NAME
+
+# Get back your data (finally :) )
+
+curl -H "X-Auth-Token: $XAUTHTOKEN" -X GET $XSTORAGEURL/$CONTAINER/$OBJECT_NAME

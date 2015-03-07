@@ -1,0 +1,6 @@
+
+Some information about the python bindings
+i.e. access openstack stuff via python !!!
+
+http://www.ibm.com/developerworks/cloud/library/cl-openstack-pythonapis/index.html?ca=drs-
+

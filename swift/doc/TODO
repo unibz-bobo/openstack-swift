@@ -1,0 +1,7 @@
+Basically now I'm trying to enhance the performance of the single machine by itself
+- filesystem tuning (raw partition vs file partition) (other kind of filesystem)
+- different configurations
+- swapping tuning
+- ...
+- proxy load balancing
+- 

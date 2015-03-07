@@ -1,0 +1,4576 @@
+Updating on 10.10.242.99
+Updating on 10.10.242.52
+Updating on 10.10.242.12
+Updating on 10.10.242.56
+Updating on 10.10.242.46
+Updating on 10.10.242.98
+Updating on 10.10.242.51
+Updating on 10.10.242.8
+Updating on 10.10.242.97
+Warning: Permanently added '10.10.242.57' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.53' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.9' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.49' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.12' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.7' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.6' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.47' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.52' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.8' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.10' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.11' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.48' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.50' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.56' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.99' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.54' (ECDSA) to the list of known hosts.
+Done with 10.10.242.9
+Done with 10.10.242.57
+Done with 10.10.242.53
+Done with 10.10.242.52
+Done with 10.10.242.49
+Done with 10.10.242.8
+Done with 10.10.242.47
+Done with 10.10.242.7
+Done with 10.10.242.10
+Done with 10.10.242.12
+Done with 10.10.242.99
+Done with 10.10.242.45
+Done with 10.10.242.48
+Done with 10.10.242.98
+Done with 10.10.242.11
+Done with 10.10.242.50
+Done with 10.10.242.54
+Done with 10.10.242.56
+Done with 10.10.242.46
+Done with 10.10.242.51
+##########################
+First node to be setup is:
+##########################
+10.10.242.97
+##########################
+mkdir: cannot create directory ‘logs’: File exists
+Cleaning up 10.10.242.97
+Cleaning up 10.10.242.99
+Cleaning up 10.10.242.12
+Cleaning up 10.10.242.54
+Cleaning up 10.10.242.52
+Cleaning up 10.10.242.98
+Cleaning up 10.10.242.56
+Warning: Permanently added '10.10.242.98' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.52' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.12' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.97' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.56' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.99' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.54' (ECDSA) to the list of known hosts.
+Cleanup done for 10.10.242.97
+Cleanup done for 10.10.242.12
+Cleanup done for 10.10.242.98
+Cleanup done for 10.10.242.52
+Cleanup done for 10.10.242.56
+Cleanup done for 10.10.242.99
+Cleanup done for 10.10.242.54
+Warning: Permanently added '10.10.242.97' (ECDSA) to the list of known hosts.
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 2 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a proxy node'
++ NODE_TYPE=proxy
++ echo 'Generic node setup starting'
++ '[' firstnode == firstnode ']'
++ echo 'Running this script on the first node'
++ IS_FIRST_NODE=1
++ cat
++ cat
++ chmod 644 stack_rsa.pub
++ chmod 600 stack_rsa
+++ readlink -m stack_rsa
++ KEY_FILE=/root/stack_rsa
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
+++ ifconfig eth0
++ HOST_IP=10.10.242.97
++ '[' -z 10.10.242.97 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ whoami
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
+++ dpkg -s python-software-properties
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ grep installed
+++ dpkg -s openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ dpkg -s openssl
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+++ openssl passwd password
++ useradd -p RyzLhMvvHDgZQ swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ '[' 1 -eq 1 ']'
++ echo 'Generating ring random hash, will be replicated on the other nodes'
++ cat
+++ od -t x8 -N 8 -A n
+++ od -t x8 -N 8 -A n
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.8 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.45 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.8:/etc/swift/
++ '[' 10.10.242.46 '!=' 10.10.242.97 ']'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.45:/etc/swift/
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.6 '!=' 10.10.242.97 ']'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.46:/etc/swift/
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.6:/etc/swift/
++ '[' 10.10.242.57 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.57:/etc/swift/
++ '[' 10.10.242.47 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.47:/etc/swift/
++ '[' 10.10.242.48 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.48:/etc/swift/
++ '[' 10.10.242.49 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.49:/etc/swift/
++ '[' 10.10.242.50 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.50:/etc/swift/
++ '[' 10.10.242.10 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.10:/etc/swift/
++ '[' 10.10.242.53 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.53:/etc/swift/
++ '[' 10.10.242.7 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.7:/etc/swift/
++ '[' 10.10.242.9 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.9:/etc/swift/
++ '[' 10.10.242.51 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.11 '!=' 10.10.242.97 ']'
++ wait
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.11:/etc/swift/
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.51:/etc/swift/
+Warning: Permanently added '10.10.242.8' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.45' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.46' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.57' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.6' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.7' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.53' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.49' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.47' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.48' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.51' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.50' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.10' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.11' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.9' (ECDSA) to the list of known hosts.
++ for PROXY_HOST in '$PROXY_HOSTS'
++ '[' 10.10.242.97 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ '[' 10.10.242.98 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ '[' 10.10.242.99 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.98:/etc/swift/
++ '[' 10.10.242.56 '!=' 10.10.242.97 ']'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.99:/etc/swift/
++ for PROXY_HOST in '$PROXY_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.56:/etc/swift/
++ '[' 10.10.242.12 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.12:/etc/swift/
++ '[' 10.10.242.52 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.52:/etc/swift/
++ '[' 10.10.242.54 '!=' 10.10.242.97 ']'
++ wait
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/swift.conf root@10.10.242.54:/etc/swift/
+Warning: Permanently added '10.10.242.99' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.12' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.98' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.52' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.56' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.54' (ECDSA) to the list of known hosts.
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ case "$NODE_TYPE" in
++ echo 'Installing a proxy node'
++ echo 'Quitting running instances...'
++ swift-init proxy stop
++ service memcached stop
++ service rsync stop
++ getPackage memcached
++ local package=memcached
+++ grep installed
+++ dpkg -s memcached
++ '[' -z 'Status: install ok installed' ']'
++ echo 'memcached is already installed.'
++ return 0
++ cd /etc/swift
++ '[' no == yes ']'
++ perl -pi -e 's/-l 127.0.0.1/-l 10.10.242.97/' /etc/memcached.conf
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service memcached restart
++ cat
+++ join_port , 11211 10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54
+++ local SEPARATOR=,
+++ shift
+++ local PORT=11211
+++ shift
+++ V=
+++ ((  7  ))
+++ '[' -z ']'
+++ V=10.10.242.97:11211
+++ shift
+++ ((  6  ))
+++ '[' -z 10.10.242.97:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211
+++ shift
+++ ((  5  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211
+++ shift
+++ ((  4  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211
+++ shift
+++ ((  3  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211
+++ shift
+++ ((  2  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211
+++ shift
+++ ((  1  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
+++ shift
+++ ((  0  ))
+++ echo 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
++ '[' 1 -eq 1 ']'
++ cd /etc/swift
++ rm -f account.builder account.ring.gz backups/account.builder backups/account.ring.gz
++ rm -f container.builder container.ring.gz backups/container.builder container.ring.gz
++ rm -f object.builder object.ring.gz backups/object.builder backups/object.ring.gz
++ rm -f '*.builder' '*.ring.gz' 'backups/*.builder' 'backups/*.ring.gz'
++ swift-ring-builder account.builder create 7 3 1
++ swift-ring-builder container.builder create 7 3 1
++ swift-ring-builder object.builder create 7 3 1
++ ZONE=1
++ WEIGHT=100
++ DEVICE=sdb1
++ for i in '$ACCOUNT_HOSTS'
++ swift-ring-builder account.builder add z1-10.10.242.8:6002/sdb1 100
+WARNING: No region specified for z1-10.10.242.8:6002/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=2
++ for i in '$ACCOUNT_HOSTS'
++ swift-ring-builder account.builder add z2-10.10.242.45:6002/sdb1 100
+WARNING: No region specified for z2-10.10.242.45:6002/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=3
++ for i in '$ACCOUNT_HOSTS'
++ swift-ring-builder account.builder add z3-10.10.242.46:6002/sdb1 100
+WARNING: No region specified for z3-10.10.242.46:6002/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=4
++ for i in '$ACCOUNT_HOSTS'
++ swift-ring-builder account.builder add z4-10.10.242.6:6002/sdb1 100
+WARNING: No region specified for z4-10.10.242.6:6002/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=5
++ for i in '$ACCOUNT_HOSTS'
++ swift-ring-builder account.builder add z5-10.10.242.57:6002/sdb1 100
+WARNING: No region specified for z5-10.10.242.57:6002/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=6
++ ZONE=1
++ for i in '$CONTAINER_HOSTS'
++ swift-ring-builder container.builder add z1-10.10.242.47:6001/sdb1 100
+WARNING: No region specified for z1-10.10.242.47:6001/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=2
++ for i in '$CONTAINER_HOSTS'
++ swift-ring-builder container.builder add z2-10.10.242.48:6001/sdb1 100
+WARNING: No region specified for z2-10.10.242.48:6001/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=3
++ for i in '$CONTAINER_HOSTS'
++ swift-ring-builder container.builder add z3-10.10.242.49:6001/sdb1 100
+WARNING: No region specified for z3-10.10.242.49:6001/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=4
++ for i in '$CONTAINER_HOSTS'
++ swift-ring-builder container.builder add z4-10.10.242.50:6001/sdb1 100
+WARNING: No region specified for z4-10.10.242.50:6001/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=5
++ for i in '$CONTAINER_HOSTS'
++ swift-ring-builder container.builder add z5-10.10.242.10:6001/sdb1 100
+WARNING: No region specified for z5-10.10.242.10:6001/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=6
++ ZONE=1
++ for i in '$OBJECT_HOSTS'
++ swift-ring-builder object.builder add z1-10.10.242.53:6000/sdb1 100
+WARNING: No region specified for z1-10.10.242.53:6000/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=2
++ for i in '$OBJECT_HOSTS'
++ swift-ring-builder object.builder add z2-10.10.242.7:6000/sdb1 100
+WARNING: No region specified for z2-10.10.242.7:6000/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=3
++ for i in '$OBJECT_HOSTS'
++ swift-ring-builder object.builder add z3-10.10.242.9:6000/sdb1 100
+WARNING: No region specified for z3-10.10.242.9:6000/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=4
++ for i in '$OBJECT_HOSTS'
++ swift-ring-builder object.builder add z4-10.10.242.51:6000/sdb1 100
+WARNING: No region specified for z4-10.10.242.51:6000/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=5
++ for i in '$OBJECT_HOSTS'
++ swift-ring-builder object.builder add z5-10.10.242.11:6000/sdb1 100
+WARNING: No region specified for z5-10.10.242.11:6000/sdb1. Defaulting to region 1.
++ '[' 1 -eq 1 ']'
++ ZONE=6
++ swift-ring-builder account.builder
++ swift-ring-builder container.builder
++ swift-ring-builder object.builder
++ swift-ring-builder account.builder rebalance
++ swift-ring-builder container.builder rebalance
++ swift-ring-builder object.builder rebalance
++ sleep 5
++ ls /etc/swift
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.8 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.45 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.46 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.45:/etc/swift
++ '[' 10.10.242.6 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.8:/etc/swift
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.46:/etc/swift
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.6:/etc/swift
++ '[' 10.10.242.57 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.57:/etc/swift
++ '[' 10.10.242.47 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.47:/etc/swift
++ '[' 10.10.242.48 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.48:/etc/swift
++ '[' 10.10.242.49 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.49:/etc/swift
++ '[' 10.10.242.50 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.50:/etc/swift
++ '[' 10.10.242.10 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.10:/etc/swift
++ '[' 10.10.242.53 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.7 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ '[' 10.10.242.9 '!=' 10.10.242.97 ']'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.7:/etc/swift
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.53:/etc/swift
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.9:/etc/swift
++ '[' 10.10.242.51 '!=' 10.10.242.97 ']'
++ for STORAGE_HOST in '$STORAGE_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.51:/etc/swift
++ '[' 10.10.242.11 '!=' 10.10.242.97 ']'
++ wait
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.11:/etc/swift
+Warning: Permanently added '10.10.242.45' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.47' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.8' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.46' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.48' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.6' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.57' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.49' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.10' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.50' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.9' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.7' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.53' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.51' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.11' (ECDSA) to the list of known hosts.
++ for PROXY_HOST in '$PROXY_HOSTS'
++ '[' 10.10.242.97 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ '[' 10.10.242.98 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ '[' 10.10.242.99 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ '[' 10.10.242.56 '!=' 10.10.242.97 ']'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.99:/etc/swift
++ for PROXY_HOST in '$PROXY_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.98:/etc/swift
++ '[' 10.10.242.12 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.56:/etc/swift
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.12:/etc/swift
++ '[' 10.10.242.52 '!=' 10.10.242.97 ']'
++ for PROXY_HOST in '$PROXY_HOSTS'
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.52:/etc/swift
++ '[' 10.10.242.54 '!=' 10.10.242.97 ']'
++ wait
++ scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i /root/stack_rsa /etc/swift/account.ring.gz /etc/swift/container.ring.gz /etc/swift/object.ring.gz root@10.10.242.54:/etc/swift
+Warning: Permanently added '10.10.242.98' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.52' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.54' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.12' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.99' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.56' (ECDSA) to the list of known hosts.
++ chown -R swift:swift /etc/swift
++ swift-init proxy restart
++ echo 'All done. Bye!'
+Installing 10.10.242.98
+Installing 10.10.242.99
+Installing 10.10.242.54
+Installing 10.10.242.52
+Installing 10.10.242.12
+Installing 10.10.242.56
+Warning: Permanently added '10.10.242.52' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.12' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.98' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.99' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.56' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.54' (ECDSA) to the list of known hosts.
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a proxy node'
++ NODE_TYPE=proxy
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ cat
++ chmod 644 stack_rsa.pub
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ chmod 600 stack_rsa
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a proxy node'
++ NODE_TYPE=proxy
++ NODE_TYPE_PROXY=proxy
++ echo 'Generic node setup starting'
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' '' == firstnode ']'
++ '[' 1 -eq 0 ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ case "$1" in
++ cat
+++ readlink -m stack_rsa
++ echo 'Installing a proxy node'
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE=proxy
++ NODE_TYPE_STORAGE=storage
++ echo 'Generic node setup starting'
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ case "$1" in
++ IS_FIRST_NODE=0
++ echo 'Installing a proxy node'
++ cat
++ KEY_FILE=/root/stack_rsa
++ NODE_TYPE=proxy
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
++ NODE_TYPE_PROXY=proxy
++ cat
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
+++ LANG=C
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a proxy node'
++ NODE_TYPE=proxy
+++ ifconfig eth0
++ cat
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ chmod 644 stack_rsa.pub
++ cat
++ chmod 644 stack_rsa.pub
++ HOST_IP=10.10.242.98
++ NODE_TYPE_PROXY=proxy
++ '[' -z 10.10.242.98 ']'
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ chmod 600 stack_rsa
++ source configuration-default.sh
++ '[' 1 -eq 0 ']'
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++ case "$1" in
++++ MASTER_PROXY=10.10.242.99
++ echo 'Installing a proxy node'
++++ LOAD_BALANCER=10.10.242.55
++ cat
++ chmod 644 stack_rsa.pub
++ NODE_TYPE=proxy
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++ chmod 600 stack_rsa
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++ echo 'Generic node setup starting'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ '[' '' == firstnode ']'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ readlink -m stack_rsa
++ cat
++ chmod 600 stack_rsa
+++ whoami
++ chmod 644 stack_rsa.pub
+++ readlink -m stack_rsa
++ KEY_FILE=/root/stack_rsa
++ '[' root '!=' root ']'
++ chmod 600 stack_rsa
+++ readlink -m stack_rsa
++ getPackage python-software-properties
+++ LANG=C
++ KEY_FILE=/root/stack_rsa
++ local package=python-software-properties
++ cat
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ ifconfig eth0
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ dpkg -s python-software-properties
++ KEY_FILE=/root/stack_rsa
+++ LANG=C
+++ grep installed
+++ ifconfig eth0
+++ readlink -m stack_rsa
++ chmod 644 stack_rsa.pub
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
++ KEY_FILE=/root/stack_rsa
+++ ifconfig eth0
++ HOST_IP=10.10.242.54
++ '[' -z 10.10.242.54 ']'
++ chmod 600 stack_rsa
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
+++ LANG=C
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++ HOST_IP=10.10.242.12
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
++ '[' -z 10.10.242.12 ']'
+++ ifconfig eth0
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++ source configuration-default.sh
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
+++ source configurations/5A5C5O7P.sh
++++ CREATE_ZONES=1
++++ REPLICATION=3
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ HOST_IP=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++ isRoot
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
+++ readlink -m stack_rsa
++ '[' -z 10.10.242.99 ']'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ source configuration-default.sh
++++ CREATE_ZONES=1
+++ whoami
+++ source configurations/5A5C5O7P.sh
++++ REPLICATION=3
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ MASTER_PROXY=10.10.242.99
++ isRoot
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++ KEY_FILE=/root/stack_rsa
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
+++ whoami
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ HOST_IP=10.10.242.52
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ '[' root '!=' root ']'
++ '[' -z 10.10.242.52 ']'
++ isRoot
++ getPackage python-software-properties
+++ LANG=C
++ source configuration-default.sh
++ local package=python-software-properties
+++ source configurations/5A5C5O7P.sh
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ whoami
+++ ifconfig eth0
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++ '[' root '!=' root ']'
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++ getPackage python-software-properties
+++ grep installed
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++ local package=python-software-properties
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
+++ dpkg -s python-software-properties
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
++ '[' root '!=' root ']'
+++ grep installed
++ getPackage python-software-properties
++ local package=python-software-properties
+++ dpkg -s python-software-properties
+++ whoami
+++ grep installed
++ HOST_IP=10.10.242.56
+++ dpkg -s python-software-properties
++ '[' -z 10.10.242.56 ']'
++ source configuration-default.sh
++ '[' root '!=' root ']'
+++ source configurations/5A5C5O7P.sh
++ getPackage python-software-properties
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++ local package=python-software-properties
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
+++ dpkg -s python-software-properties
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
+++ grep installed
++ isRoot
+++ whoami
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
+++ dpkg -s python-software-properties
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ grep installed
+++ dpkg -s openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ grep installed
+++ dpkg -s openssh-server
+++ grep installed
+++ dpkg -s openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ echo 'python-software-properties is already installed.'
++ return 0
++ return 0
++ getPackage openssh-server
++ getPackage openssh-server
++ local package=openssh-server
++ local package=openssh-server
+++ dpkg -s openssh-server
+++ dpkg -s openssh-server
+++ grep installed
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ dpkg -s openssh-server
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ dpkg -s openssl
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ grep installed
+++ dpkg -s openssl
++ '[' -z 'Status: install ok installed' ']'
+++ dpkg -s openssl
++ echo 'openssh-server is already installed.'
++ return 0
+++ grep installed
++ getPackage openssl
++ '[' -z 'Status: install ok installed' ']'
++ local package=openssl
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ grep installed
+++ dpkg -s openssl
+++ dpkg -s openssl
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ dpkg -s openssl
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
++ '[' -z 'Status: install ok installed' ']'
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ echo 'openssl is already installed.'
++ return 0
++ return 0
++ cd
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
++ git clone git://github.com/openstack/python-swiftclient.git
++ cd /root/python-swiftclient
++ '[' -z 'Status: install ok installed' ']'
++ git pull origin master
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ cd /root/python-swiftclient
++ git pull origin master
++ git pull origin master
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ sudo pip install .
++ sudo pip install .
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ sudo pip install .
++ sudo pip install .
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd
++ git clone git://github.com/openstack/swift.git
++ cd /root/swift
++ git pull origin master
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+++ openssl passwd password
++ useradd -p wYkeNxXihaHh. swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
+++ openssl passwd password
++ useradd -p VCJxC6luI3RVQ swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ dpkg -s ntp
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
+++ openssl passwd password
++ useradd -p RyzLhMvvHDgZQ swift
+++ openssl passwd password
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
+++ openssl passwd password
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ useradd -p unyrQWtxDX9EY swift
++ rm -Rf /var/cache/swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ rm -Rf /srv/node
++ useradd -p lWjdCijcQwGFA swift
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ chown -R swift:swift /etc/swift/
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
+useradd: user 'swift' already exists
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ mkdir -p /etc/swift
++ getPackage ntp
++ local package=ntp
++ chown swift:swift /var/run/swift
++ chown -R swift:swift /etc/swift/
+++ grep installed
+++ dpkg -s ntp
++ rm -Rf /var/cache/swift
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ rm -Rf /srv/node
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+++ openssl passwd password
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ useradd -p 2.eT/SXrEPV3E swift
++ chown swift:swift /var/cache/swift
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ getPackage ntp
+useradd: user 'swift' already exists
++ local package=ntp
++ mkdir -p /etc/swift
++ chown swift:swift /var/cache/swift
+++ dpkg -s ntp
+++ grep installed
++ chown -R swift:swift /etc/swift/
++ getPackage ntp
++ local package=ntp
+++ dpkg -s ntp
+++ grep installed
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ case "$NODE_TYPE" in
++ echo 'Installing a proxy node'
++ echo 'Quitting running instances...'
++ swift-init proxy stop
++ case "$NODE_TYPE" in
++ echo 'Installing a proxy node'
++ echo 'Quitting running instances...'
++ swift-init proxy stop
++ case "$NODE_TYPE" in
++ echo 'Installing a proxy node'
++ echo 'Quitting running instances...'
++ swift-init proxy stop
++ case "$NODE_TYPE" in
++ echo 'Installing a proxy node'
++ echo 'Quitting running instances...'
++ swift-init proxy stop
++ case "$NODE_TYPE" in
++ echo 'Installing a proxy node'
++ echo 'Quitting running instances...'
++ swift-init proxy stop
++ case "$NODE_TYPE" in
++ echo 'Installing a proxy node'
++ echo 'Quitting running instances...'
++ swift-init proxy stop
++ service memcached stop
++ service rsync stop
++ getPackage memcached
++ local package=memcached
+++ grep installed
+++ dpkg -s memcached
++ service memcached stop
++ '[' -z 'Status: install ok installed' ']'
++ echo 'memcached is already installed.'
++ return 0
++ cd /etc/swift
++ '[' no == yes ']'
++ perl -pi -e 's/-l 127.0.0.1/-l 10.10.242.56/' /etc/memcached.conf
++ service rsync stop
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service memcached restart
++ getPackage memcached
++ local package=memcached
+++ dpkg -s memcached
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'memcached is already installed.'
++ return 0
++ cd /etc/swift
++ '[' no == yes ']'
++ perl -pi -e 's/-l 127.0.0.1/-l 10.10.242.98/' /etc/memcached.conf
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service memcached restart
++ cat
+++ join_port , 11211 10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54
+++ local SEPARATOR=,
+++ shift
+++ local PORT=11211
+++ shift
+++ V=
+++ ((  7  ))
+++ '[' -z ']'
+++ V=10.10.242.97:11211
+++ shift
+++ ((  6  ))
+++ '[' -z 10.10.242.97:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211
+++ shift
+++ ((  5  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211
+++ shift
+++ ((  4  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211
+++ shift
+++ ((  3  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211
+++ shift
+++ ((  2  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211
+++ shift
+++ ((  1  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
+++ shift
+++ ((  0  ))
+++ echo 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
++ service memcached stop
++ '[' 0 -eq 1 ']'
++ chown -R swift:swift /etc/swift
++ swift-init proxy restart
++ service memcached stop
++ service rsync stop
++ getPackage memcached
++ local package=memcached
++ cat
+++ grep installed
+++ dpkg -s memcached
++ service rsync stop
+++ join_port , 11211 10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54
++ service memcached stop
+++ local SEPARATOR=,
+++ shift
+++ local PORT=11211
+++ shift
+++ V=
+++ ((  7  ))
+++ '[' -z ']'
+++ V=10.10.242.97:11211
+++ shift
+++ ((  6  ))
+++ '[' -z 10.10.242.97:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211
+++ shift
+++ ((  5  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211
+++ shift
+++ ((  4  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211
+++ shift
+++ ((  3  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211
+++ shift
+++ ((  2  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211
+++ shift
+++ ((  1  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
+++ shift
+++ ((  0  ))
+++ echo 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
++ service memcached stop
++ '[' 0 -eq 1 ']'
++ chown -R swift:swift /etc/swift
++ getPackage memcached
++ local package=memcached
++ swift-init proxy restart
+++ dpkg -s memcached
+++ grep installed
++ service rsync stop
++ '[' -z 'Status: install ok installed' ']'
++ echo 'memcached is already installed.'
++ return 0
++ cd /etc/swift
++ '[' no == yes ']'
++ perl -pi -e 's/-l 127.0.0.1/-l 10.10.242.12/' /etc/memcached.conf
++ service rsync stop
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service memcached restart
++ getPackage memcached
++ local package=memcached
+++ grep installed
+++ dpkg -s memcached
++ getPackage memcached
++ local package=memcached
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'memcached is already installed.'
+++ dpkg -s memcached
++ return 0
++ cd /etc/swift
++ '[' no == yes ']'
++ perl -pi -e 's/-l 127.0.0.1/-l 10.10.242.99/' /etc/memcached.conf
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service memcached restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'memcached is already installed.'
++ return 0
++ cd /etc/swift
++ '[' no == yes ']'
++ perl -pi -e 's/-l 127.0.0.1/-l 10.10.242.54/' /etc/memcached.conf
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service memcached restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'memcached is already installed.'
++ return 0
++ cd /etc/swift
++ '[' no == yes ']'
++ perl -pi -e 's/-l 127.0.0.1/-l 10.10.242.52/' /etc/memcached.conf
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service memcached restart
++ cat
+++ join_port , 11211 10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54
+++ local SEPARATOR=,
+++ shift
+++ local PORT=11211
+++ shift
+++ V=
+++ ((  7  ))
+++ '[' -z ']'
+++ V=10.10.242.97:11211
+++ shift
+++ ((  6  ))
+++ '[' -z 10.10.242.97:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211
+++ shift
+++ ((  5  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211
+++ shift
+++ ((  4  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211
+++ shift
+++ ((  3  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211
+++ shift
+++ ((  2  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211
+++ shift
+++ ((  1  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
+++ shift
+++ ((  0  ))
+++ echo 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
++ '[' 0 -eq 1 ']'
++ chown -R swift:swift /etc/swift
++ swift-init proxy restart
++ cat
+++ join_port , 11211 10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54
+++ local SEPARATOR=,
+++ shift
+++ local PORT=11211
+++ shift
+++ V=
+++ ((  7  ))
+++ '[' -z ']'
+++ V=10.10.242.97:11211
+++ shift
+++ ((  6  ))
+++ '[' -z 10.10.242.97:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211
+++ shift
+++ ((  5  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211
+++ shift
+++ ((  4  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211
+++ shift
+++ ((  3  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211
+++ shift
+++ ((  2  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211
+++ shift
+++ ((  1  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
+++ shift
+++ ((  0  ))
+++ echo 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
++ '[' 0 -eq 1 ']'
++ chown -R swift:swift /etc/swift
++ swift-init proxy restart
++ cat
+++ join_port , 11211 10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54
+++ local SEPARATOR=,
+++ shift
+++ local PORT=11211
+++ shift
+++ V=
+++ ((  7  ))
+++ '[' -z ']'
+++ V=10.10.242.97:11211
+++ shift
+++ ((  6  ))
+++ '[' -z 10.10.242.97:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211
+++ shift
+++ ((  5  ))
++ cat
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211
+++ shift
+++ ((  4  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211
+++ shift
+++ ((  3  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211
+++ shift
+++ ((  2  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211
+++ shift
+++ ((  1  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
+++ shift
+++ ((  0  ))
+++ echo 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
+++ join_port , 11211 10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54
+++ local SEPARATOR=,
+++ shift
+++ local PORT=11211
+++ shift
+++ V=
+++ ((  7  ))
+++ '[' -z ']'
++ '[' 0 -eq 1 ']'
+++ V=10.10.242.97:11211
++ chown -R swift:swift /etc/swift
+++ shift
+++ ((  6  ))
+++ '[' -z 10.10.242.97:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211
+++ shift
+++ ((  5  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211
+++ shift
+++ ((  4  ))
++ swift-init proxy restart
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211
+++ shift
+++ ((  3  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211
+++ shift
+++ ((  2  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211
+++ shift
+++ ((  1  ))
+++ '[' -z 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211 ']'
+++ V=10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
+++ shift
+++ ((  0  ))
+++ echo 10.10.242.97:11211,10.10.242.98:11211,10.10.242.99:11211,10.10.242.56:11211,10.10.242.12:11211,10.10.242.52:11211,10.10.242.54:11211
++ '[' 0 -eq 1 ']'
++ chown -R swift:swift /etc/swift
++ swift-init proxy restart
++ echo 'All done. Bye!'
+Done with 10.10.242.56
++ echo 'All done. Bye!'
+Done with 10.10.242.98
++ echo 'All done. Bye!'
+Done with 10.10.242.12
++ echo 'All done. Bye!'
+Done with 10.10.242.99
++ echo 'All done. Bye!'
+Done with 10.10.242.54
++ echo 'All done. Bye!'
+Done with 10.10.242.52
+Done Done
+mkdir: cannot create directory ‘logs’: File exists
+Installing 10.10.242.8
+Installing 10.10.242.57
+Installing 10.10.242.53
+Installing 10.10.242.7
+Installing 10.10.242.9
+Installing 10.10.242.51
+Installing 10.10.242.11
+Installing 10.10.242.47
+Installing 10.10.242.10
+Installing 10.10.242.48
+Installing 10.10.242.49
+Installing 10.10.242.50
+Installing 10.10.242.6
+Installing 10.10.242.46
+Installing 10.10.242.45
+Warning: Permanently added '10.10.242.10' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.8' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.53' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.6' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.45' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.57' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.9' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.49' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.47' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.11' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.7' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.48' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.46' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.50' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.51' (ECDSA) to the list of known hosts.
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ cat
++ cat
++ chmod 644 stack_rsa.pub
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ chmod 600 stack_rsa
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ chmod 644 stack_rsa.pub
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
+++ readlink -m stack_rsa
++ chmod 600 stack_rsa
++ KEY_FILE=/root/stack_rsa
++ cat
+++ readlink -m stack_rsa
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
+++ ifconfig eth0
++ KEY_FILE=/root/stack_rsa
++ chmod 644 stack_rsa.pub
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
++ chmod 600 stack_rsa
+++ ifconfig eth0
++ HOST_IP=10.10.242.53
++ '[' -z 10.10.242.53 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
+++ readlink -m stack_rsa
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++ HOST_IP=10.10.242.10
++++ REPLICATION=3
++ '[' -z 10.10.242.10 ']'
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ source configuration-default.sh
++ isRoot
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++ KEY_FILE=/root/stack_rsa
++++ MASTER_PROXY=10.10.242.99
+++ whoami
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
+++ LANG=C
++ isRoot
+++ ifconfig eth0
++ '[' root '!=' root ']'
+++ whoami
++ getPackage python-software-properties
++ local package=python-software-properties
+++ grep installed
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
++ HOST_IP=10.10.242.47
+++ dpkg -s python-software-properties
++ '[' -z 10.10.242.47 ']'
++ source configuration-default.sh
+++ grep installed
+++ source configurations/5A5C5O7P.sh
+++ dpkg -s python-software-properties
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ whoami
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
+++ grep installed
++ NODE_TYPE=storage
+++ dpkg -s python-software-properties
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ cat
++ chmod 644 stack_rsa.pub
++ chmod 600 stack_rsa
+++ readlink -m stack_rsa
++ KEY_FILE=/root/stack_rsa
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
+++ ifconfig eth0
++ HOST_IP=10.10.242.8
++ '[' -z 10.10.242.8 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ whoami
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ '[' root '!=' root ']'
++ return 0
++ getPackage python-software-properties
++ getPackage openssh-server
++ local package=openssh-server
++ local package=python-software-properties
+++ grep installed
+++ grep installed
+++ dpkg -s python-software-properties
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ dpkg -s openssh-server
+++ dpkg -s openssh-server
+++ grep installed
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
++ cat
+++ dpkg -s openssh-server
+++ grep installed
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ chmod 644 stack_rsa.pub
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ chmod 600 stack_rsa
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
+++ readlink -m stack_rsa
++ cat
++ KEY_FILE=/root/stack_rsa
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
++ chmod 644 stack_rsa.pub
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ '[' 1 -eq 0 ']'
+++ ifconfig eth0
++ SSL_ENABLED=no
++ case "$1" in
++ '[' 1 -eq 0 ']'
++ echo 'Installing a storage node'
++ case "$1" in
++ NODE_TYPE=storage
++ chmod 600 stack_rsa
++ echo 'Installing a storage node'
++ echo 'Generic node setup starting'
++ NODE_TYPE=storage
++ '[' '' == firstnode ']'
++ echo 'Generic node setup starting'
++ echo 'Running on consequent (>1st) nodes'
++ '[' '' == firstnode ']'
++ IS_FIRST_NODE=0
++ echo 'Running on consequent (>1st) nodes'
++ cat
++ IS_FIRST_NODE=0
++ cat
++ HOST_IP=10.10.242.7
++ '[' -z 10.10.242.7 ']'
++ source configuration-default.sh
+++ readlink -m stack_rsa
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++ NODE_TYPE_PROXY=proxy
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++ NODE_TYPE_STORAGE=storage
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ KEY_FILE=/root/stack_rsa
++ SSL_ENABLED=no
++++ CREATE_ZONES=1
++ cat
++++ REPLICATION=3
++ '[' 1 -eq 0 ']'
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ case "$1" in
++ cat
++ isRoot
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
+++ whoami
+++ LANG=C
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
++ '[' '' == firstnode ']'
+++ ifconfig eth0
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ chmod 644 stack_rsa.pub
++ chmod 644 stack_rsa.pub
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
++ chmod 600 stack_rsa
+++ grep installed
++ chmod 600 stack_rsa
++ cat
++ HOST_IP=10.10.242.45
+++ dpkg -s python-software-properties
++ '[' -z 10.10.242.45 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
+++ readlink -m stack_rsa
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
+++ readlink -m stack_rsa
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ '[' -z 'Status: install ok installed' ']'
++++ CREATE_ZONES=1
++ echo 'python-software-properties is already installed.'
++++ REPLICATION=3
++ return 0
++ '[' -z 'Status: install ok installed' ']'
++ chmod 644 stack_rsa.pub
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ KEY_FILE=/root/stack_rsa
++ getPackage openssh-server
++ echo 'openssh-server is already installed.'
++ isRoot
++ local package=openssh-server
++ return 0
++ getPackage openssl
++ local package=openssl
++ KEY_FILE=/root/stack_rsa
+++ whoami
+++ dpkg -s openssh-server
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
++ chmod 600 stack_rsa
+++ grep installed
+++ LANG=C
+++ dpkg -s openssl
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ grep installed
+++ LANG=C
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ '[' root '!=' root ']'
++ return 0
++ getPackage python-software-properties
+++ ifconfig eth0
++ getPackage openssl
++ local package=python-software-properties
++ local package=openssl
+++ ifconfig eth0
+++ readlink -m stack_rsa
+++ dpkg -s python-software-properties
+++ dpkg -s openssl
+++ grep installed
+++ grep installed
++ KEY_FILE=/root/stack_rsa
++ HOST_IP=10.10.242.6
++ '[' -z 10.10.242.6 ']'
++ HOST_IP=10.10.242.57
++ source configuration-default.sh
++ '[' -z 10.10.242.57 ']'
+++ source configurations/5A5C5O7P.sh
++ source configuration-default.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ source configurations/5A5C5O7P.sh
++++ MASTER_PROXY=10.10.242.99
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ LOAD_BALANCER=10.10.242.55
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++++ CREATE_ZONES=1
+++ LANG=C
+++ ifconfig eth0
++++ REPLICATION=3
++ return 0
++ getPackage openssl
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
++ local package=openssl
++ isRoot
+++ whoami
+++ whoami
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
+++ grep installed
++ '[' 1 -eq 0 ']'
+++ dpkg -s openssl
++ case "$1" in
++ echo 'Installing a storage node'
++ HOST_IP=10.10.242.9
++ '[' root '!=' root ']'
++ NODE_TYPE=storage
++ '[' -z 10.10.242.9 ']'
++ getPackage python-software-properties
++ echo 'Generic node setup starting'
++ local package=python-software-properties
++ source configuration-default.sh
++ '[' root '!=' root ']'
++ '[' '' == firstnode ']'
+++ source configurations/5A5C5O7P.sh
++ echo 'Running on consequent (>1st) nodes'
++ getPackage python-software-properties
++ local package=python-software-properties
++ IS_FIRST_NODE=0
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++ cat
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
+++ dpkg -s python-software-properties
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
+++ grep installed
++++ CREATE_ZONES=1
+++ dpkg -s python-software-properties
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
+++ grep installed
++ isRoot
+++ whoami
++ cat
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
++ chmod 644 stack_rsa.pub
+++ dpkg -s python-software-properties
+++ grep installed
++ chmod 600 stack_rsa
+++ readlink -m stack_rsa
++ KEY_FILE=/root/stack_rsa
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
+++ ifconfig eth0
++ HOST_IP=10.10.242.11
++ '[' -z 10.10.242.11 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ return 0
++ isRoot
++ getPackage openssh-server
++ local package=openssh-server
+++ whoami
+++ dpkg -s openssh-server
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ '[' root '!=' root ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage python-software-properties
++ return 0
++ local package=python-software-properties
++ cd
++ getPackage openssl
++ git clone git://github.com/openstack/python-swiftclient.git
++ local package=openssl
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
+++ grep installed
++ echo 'python-software-properties is already installed.'
+++ dpkg -s python-software-properties
++ return 0
+++ dpkg -s openssl
++ getPackage openssh-server
++ local package=openssh-server
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
+++ grep installed
+++ dpkg -s openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ git pull origin master
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ local package=openssh-server
++ echo 'python-software-properties is already installed.'
++ return 0
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ getPackage openssh-server
++ local package=openssh-server
++ cd /root/python-swiftclient
+++ dpkg -s openssh-server
++ git pull origin master
+++ grep installed
+++ grep installed
+++ dpkg -s openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ dpkg -s openssh-server
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ grep installed
+++ dpkg -s openssl
++ '[' -z 'Status: install ok installed' ']'
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ echo 'python-software-properties is already installed.'
++ return 0
++ return 0
++ cd
++ getPackage openssh-server
++ git clone git://github.com/openstack/python-swiftclient.git
++ local package=openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ dpkg -s openssh-server
+++ grep installed
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
+++ grep installed
++ cd /root/python-swiftclient
++ git pull origin master
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
+++ dpkg -s openssl
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ cat
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ '[' -z 'Status: install ok installed' ']'
++ getPackage openssl
++ echo 'openssh-server is already installed.'
++ local package=openssl
++ return 0
++ getPackage openssl
++ local package=openssl
+++ grep installed
++ chmod 644 stack_rsa.pub
+++ dpkg -s openssl
+++ dpkg -s openssl
+++ grep installed
++ chmod 600 stack_rsa
+++ readlink -m stack_rsa
++ KEY_FILE=/root/stack_rsa
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
+++ LANG=C
++ getPackage openssl
++ local package=openssl
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ ifconfig eth0
+++ dpkg -s openssl
+++ grep installed
++ HOST_IP=10.10.242.49
++ '[' -z 10.10.242.49 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ whoami
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
++ '[' -z 'Status: install ok installed' ']'
+++ grep installed
++ echo 'openssl is already installed.'
++ return 0
+++ dpkg -s python-software-properties
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ cd /root/python-swiftclient
++ return 0
++ git pull origin master
++ getPackage openssl
++ local package=openssl
+++ dpkg -s openssl
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
++ '[' -z 'Status: install ok installed' ']'
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ echo 'openssl is already installed.'
++ return 0
++ return 0
++ cd
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
++ cd /root/python-swiftclient
++ git pull origin master
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' -z 'Status: install ok installed' ']'
++ '[' '' == firstnode ']'
++ echo 'openssl is already installed.'
++ echo 'Running on consequent (>1st) nodes'
++ return 0
++ IS_FIRST_NODE=0
++ cd
++ cat
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
++ cat
++ chmod 644 stack_rsa.pub
++ chmod 600 stack_rsa
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
+++ readlink -m stack_rsa
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
++ KEY_FILE=/root/stack_rsa
+++ grep installed
+++ dpkg -s openssh-server
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
+++ ifconfig eth0
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
++ HOST_IP=10.10.242.50
++ '[' -z 10.10.242.50 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ whoami
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
+++ grep installed
+++ dpkg -s python-software-properties
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ grep installed
+++ dpkg -s openssl
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ dpkg -s openssh-server
+++ grep installed
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ sudo pip install .
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ cat
++ chmod 644 stack_rsa.pub
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ chmod 600 stack_rsa
++ sudo pip install .
+++ readlink -m stack_rsa
++ KEY_FILE=/root/stack_rsa
+++ LANG=C
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ ifconfig eth0
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ HOST_IP=10.10.242.46
++ git pull origin master
++ '[' -z 10.10.242.46 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ whoami
++ sudo pip install .
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
+++ dpkg -s python-software-properties
++ sudo pip install .
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ grep installed
+++ dpkg -s openssl
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
+sudo: + '[' -z 'Status: install ok installed' ']'
+unable to resolve host swiftstorage2nd+ echo 'python-software-properties is already installed.'
+
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
+++ dpkg -s openssh-server
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
++ sudo pip install .
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ sudo pip install .
++ sudo pip install .
++ sudo pip install .
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ grep installed
+++ dpkg -s openssl
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ cat
++ chmod 644 stack_rsa.pub
++ chmod 600 stack_rsa
+++ readlink -m stack_rsa
++ KEY_FILE=/root/stack_rsa
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ LANG=C
+++ ifconfig eth0
++ HOST_IP=10.10.242.51
++ '[' -z 10.10.242.51 ']'
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ whoami
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
+++ grep installed
+++ dpkg -s python-software-properties
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ grep installed
+++ dpkg -s openssh-server
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ grep installed
+++ dpkg -s openssl
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssl is already installed.'
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ sudo pip install .
++ cd
++ git clone git://github.com/openstack/swift.git
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ sudo pip install .
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+sudo: unable to resolve host swiftstorage2nd
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ NODE_TYPE_PROXY=proxy
++ NODE_TYPE_STORAGE=storage
++ SSL_ENABLED=no
++ '[' 1 -eq 0 ']'
++ case "$1" in
++ echo 'Installing a storage node'
++ NODE_TYPE=storage
++ echo 'Generic node setup starting'
++ '[' '' == firstnode ']'
++ echo 'Running on consequent (>1st) nodes'
++ IS_FIRST_NODE=0
++ cat
++ cat
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ chmod 644 stack_rsa.pub
++ chmod 600 stack_rsa
+++ readlink -m stack_rsa
++ KEY_FILE=/root/stack_rsa
+++ LANG=C
+++ awk '/inet addr/ {split ($2,A,":"); print A[2]}'
+++ ifconfig eth0
++ HOST_IP=10.10.242.48
++ '[' -z 10.10.242.48 ']'
++ sudo pip install .
++ source configuration-default.sh
+++ source configurations/5A5C5O7P.sh
++++ PROXY_HOSTS='10.10.242.97 10.10.242.98 10.10.242.99 10.10.242.56 10.10.242.12 10.10.242.52 10.10.242.54'
++++ MASTER_PROXY=10.10.242.99
++++ LOAD_BALANCER=10.10.242.55
++++ ACCOUNT_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57'
++++ CONTAINER_HOSTS='10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10'
++++ OBJECT_HOSTS='10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++++ CREATE_ZONES=1
++++ REPLICATION=3
++ STORAGE_HOSTS='10.10.242.8 10.10.242.45 10.10.242.46 10.10.242.6 10.10.242.57 10.10.242.47 10.10.242.48 10.10.242.49 10.10.242.50 10.10.242.10 10.10.242.53 10.10.242.7 10.10.242.9 10.10.242.51 10.10.242.11'
++ isRoot
+++ whoami
++ '[' root '!=' root ']'
++ getPackage python-software-properties
++ local package=python-software-properties
+++ grep installed
+++ dpkg -s python-software-properties
++ '[' -z 'Status: install ok installed' ']'
++ echo 'python-software-properties is already installed.'
++ return 0
++ getPackage openssh-server
++ local package=openssh-server
+++ dpkg -s openssh-server
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'openssh-server is already installed.'
++ return 0
++ getPackage openssl
++ local package=openssl
+++ dpkg -s openssl
+++ grep installed
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ '[' -z 'Status: install ok installed' ']'
++ cd
++ echo 'openssl is already installed.'
++ git clone git://github.com/openstack/swift.git
++ return 0
++ cd
++ git clone git://github.com/openstack/python-swiftclient.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
+fatal: destination path 'python-swiftclient' already exists and is not an empty directory.
++ cd /root/python-swiftclient
++ git pull origin master
++ sudo pip install .
+From git://github.com/openstack/python-swiftclient
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
++ cd
++ git clone git://github.com/openstack/swift.git
+fatal: destination path 'swift' already exists and is not an empty directory.
++ cd /root/swift
++ git pull origin master
+From git://github.com/openstack/swift
+ * branch            master     -> FETCH_HEAD
++ sudo pip install .
+++ openssl passwd password
++ useradd -p hxRAEHLrFdI02 swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
+++ openssl passwd password
++ useradd -p TBE4xzjtrAxg6 swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
+++ openssl passwd password
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
++ useradd -p SznYsaQsmokRg swift
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ getPackage ntp
++ local package=ntp
+++ dpkg -s ntp
+++ grep installed
+++ openssl passwd password
++ useradd -p QqjgPLfXQD8Zk swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+++ openssl passwd password
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ useradd -p ivG0nfXWf.S3w swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
+++ openssl passwd password
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/run/swift
++ chown swift:swift /var/cache/swift
++ rm -Rf /var/cache/swift
++ getPackage ntp
++ local package=ntp
++ rm -Rf /srv/node
++ useradd -p LoIB1WlGIr7Go swift
+++ grep installed
+++ dpkg -s ntp
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown -R swift:swift /etc/swift/
++ chown swift:swift /var/run/swift
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ rm -Rf /var/cache/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /srv/node
++ rm -Rf /var/cache/swift
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ grep installed
++ chown swift:swift /var/cache/swift
+++ dpkg -s ntp
++ getPackage ntp
++ local package=ntp
+++ dpkg -s ntp
+++ grep installed
++ getPackage ntp
++ local package=ntp
+++ dpkg -s ntp
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
+++ openssl passwd password
+++ openssl passwd password
++ useradd -p bWi.EijoZI6Yo swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ useradd -p cAQlR9mfD3t0k swift
++ '[' 0 -eq 1 ']'
+useradd: user 'swift' already exists
++ mkdir -p /var/run/swift
++ mkdir -p /etc/swift
++ chown swift:swift /var/run/swift
++ chown -R swift:swift /etc/swift/
++ rm -Rf /var/cache/swift
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ rm -Rf /srv/node
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
+++ openssl passwd password
++ useradd -p sUjDZfAi20m2s swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+++ openssl passwd password
++ useradd -p rywLNhBadJo.k swift
++ service haproxy stop
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
+haproxy: unrecognized service
++ apt-get remove haproxy
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+++ openssl passwd password
++ useradd -p qkQHkhatkEZbg swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
+++ openssl passwd password
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ rm -Rf /var/cache/swift
++ chown swift:swift /var/cache/swift
++ useradd -p NsUmyZrs3XGbY swift
++ rm -Rf /srv/node
++ getPackage ntp
++ local package=ntp
+useradd: user 'swift' already exists
+++ grep installed
++ mkdir -p /etc/swift
+++ dpkg -s ntp
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
+++ openssl passwd password
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ useradd -p jJTufADM1DBMQ swift
++ getPackage ntp
++ local package=ntp
+useradd: user 'swift' already exists
+++ dpkg -s ntp
++ mkdir -p /etc/swift
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ service haproxy stop
++ getPackage ntp
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
+haproxy: unrecognized service
++ apt-get remove haproxy
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ dpkg -s ntp
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
++ service haproxy stop
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
+haproxy: unrecognized service
+haproxy: unrecognized service
++ apt-get remove haproxy
++ apt-get remove haproxy
++ service haproxy stop
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
+++ openssl passwd password
++ useradd -p .tKd6Y.u958kE swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ mkdir -p /var/cache/swift /srv/node/
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ grep installed
+++ dpkg -s ntp
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ swift-init object-replicator stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ swift-init object-replicator stop
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ swift-init object-replicator stop
++ swift-init object-replicator stop
++ swift-init object-replicator stop
++ swift-init object-replicator stop
++ swift-init object-replicator stop
++ swift-init object-replicator stop
++ swift-init object-updater stop
++ swift-init object-replicator stop
++ swift-init object-replicator stop
++ swift-init object-replicator stop
++ swift-init object-replicator stop
++ swift-init object-updater stop
++ swift-init object-replicator stop
++ swift-init object-updater stop
++ swift-init object-updater stop
++ swift-init object-updater stop
++ swift-init object-updater stop
++ swift-init object-updater stop
++ swift-init object-updater stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ swift-init object-auditor stop
++ swift-init object-updater stop
++ swift-init object-updater stop
++ swift-init object-updater stop
++ swift-init object-updater stop
++ swift-init object-auditor stop
++ swift-init object-updater stop
+++ openssl passwd password
++ swift-init object-auditor stop
++ useradd -p WjwOpfuB2pppo swift
+useradd: user 'swift' already exists
++ mkdir -p /etc/swift
++ chown -R swift:swift /etc/swift/
++ swift-init object-auditor stop
++ '[' 0 -eq 1 ']'
++ mkdir -p /var/run/swift
++ chown swift:swift /var/run/swift
++ rm -Rf /var/cache/swift
++ rm -Rf /srv/node
+rm: cannot remove `/srv/node/sdb1': Device or resource busy
++ swift-init object-auditor stop
++ mkdir -p /var/cache/swift /srv/node/
++ swift-init object-auditor stop
++ chown swift:swift /var/cache/swift
++ getPackage ntp
++ local package=ntp
+++ dpkg -s ntp
+++ grep installed
++ '[' -z 'Status: install ok installed' ']'
++ echo 'ntp is already installed.'
++ return 0
++ service ntp restart
++ swift-init object-auditor stop
++ swift-init object-auditor stop
++ swift-init object-replicator stop
++ swift-init container-server stop
++ swift-init object-auditor stop
++ swift-init object-auditor stop
++ swift-init object-auditor stop
++ swift-init object-auditor stop
++ swift-init container-server stop
++ swift-init object-auditor stop
++ swift-init container-server stop
++ swift-init container-server stop
++ service haproxy stop
+haproxy: unrecognized service
++ apt-get remove haproxy
++ swift-init container-server stop
++ swift-init container-server stop
++ swift-init container-server stop
++ swift-init container-server stop
++ swift-init object-updater stop
++ swift-init container-replicator stop
++ swift-init container-server stop
++ swift-init container-server stop
++ swift-init container-server stop
++ swift-init container-server stop
++ swift-init container-replicator stop
++ swift-init container-server stop
++ swift-init container-replicator stop
++ swift-init container-replicator stop
++ swift-init container-replicator stop
++ swift-init container-replicator stop
++ swift-init container-replicator stop
++ swift-init container-replicator stop
++ swift-init object-auditor stop
++ swift-init container-updater stop
++ case "$NODE_TYPE" in
++ echo 'Installing a storage node'
++ echo 'Quitting running instances...'
++ swift-init object-server stop
++ swift-init container-replicator stop
++ swift-init container-replicator stop
++ swift-init container-replicator stop
++ swift-init container-replicator stop
++ swift-init container-updater stop
++ swift-init container-replicator stop
++ swift-init container-updater stop
++ swift-init container-updater stop
++ swift-init container-updater stop
++ swift-init container-updater stop
++ swift-init container-updater stop
++ swift-init container-updater stop
++ swift-init container-server stop
++ swift-init container-auditor stop
++ swift-init object-replicator stop
++ swift-init container-updater stop
++ swift-init container-updater stop
++ swift-init container-updater stop
++ swift-init container-updater stop
++ swift-init container-auditor stop
++ swift-init container-updater stop
++ swift-init container-auditor stop
++ swift-init container-auditor stop
++ swift-init container-auditor stop
++ swift-init container-auditor stop
++ swift-init container-auditor stop
++ swift-init container-auditor stop
++ swift-init container-replicator stop
++ swift-init account-server stop
++ swift-init object-updater stop
++ swift-init container-auditor stop
++ swift-init container-auditor stop
++ swift-init container-auditor stop
++ swift-init container-auditor stop
++ swift-init account-server stop
++ swift-init container-auditor stop
++ swift-init account-server stop
++ swift-init account-server stop
++ swift-init account-server stop
++ swift-init account-server stop
++ swift-init account-server stop
++ swift-init account-server stop
++ swift-init container-updater stop
++ swift-init account-replicator stop
++ swift-init object-auditor stop
++ swift-init account-server stop
++ swift-init account-server stop
++ swift-init account-server stop
++ swift-init account-server stop
++ swift-init account-replicator stop
++ swift-init account-server stop
++ swift-init account-replicator stop
++ swift-init account-replicator stop
++ swift-init account-replicator stop
++ swift-init account-replicator stop
++ swift-init account-replicator stop
++ swift-init account-replicator stop
++ swift-init container-auditor stop
++ swift-init account-auditor stop
++ swift-init account-replicator stop
++ swift-init account-replicator stop
++ swift-init account-replicator stop
++ swift-init account-replicator stop
++ swift-init account-auditor stop
++ swift-init account-replicator stop
++ swift-init account-auditor stop
++ swift-init account-auditor stop
++ swift-init account-auditor stop
++ swift-init account-auditor stop
++ swift-init account-auditor stop
++ swift-init account-auditor stop
++ swift-init account-server stop
++ service rsync stop
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ swift-init account-auditor stop
++ swift-init account-auditor stop
++ swift-init account-auditor stop
++ swift-init account-auditor stop
++ service rsync stop
++ swift-init account-auditor stop
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ rm -f /swift-storage
++ service rsync stop
++ service rsync stop
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ service rsync stop
++ service rsync stop
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ rm -f /swift-storage
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ rm -R -f /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ truncate -s 512M /swift-storage
++ rm -R -f /srv/node/sdb1
++ mkfs.xfs -i size=512 /swift-storage
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ mkfs.xfs -i size=512 /swift-storage
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ rm -f /swift-storage
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ rm -R -f /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ service rsync stop
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ service rsync stop
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ swift-init account-replicator stop
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mount /swift-storage
++ service rsync stop
++ STORAGE_DISK=/swift-storage
++ service rsync stop
++ umount /srv/node/sdb1
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ service rsync stop
++ service rsync stop
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ chown swift:swift /srv/node/sdb1
++ rm -f /swift-storage
++ sudo rm -rf /var/log/swift
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ rm -R -f /srv/node/sdb1
++ rm -f /swift-storage
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ rm -R -f /srv/node/sdb1
++ cat
++ service rsync stop
++ truncate -s 512M /swift-storage
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
++ mkfs.xfs -i size=512 /swift-storage
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service rsync restart
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mount /swift-storage
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mount /swift-storage
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mount /swift-storage
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mount /swift-storage
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mount /swift-storage
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ chown swift:swift /srv/node/sdb1
++ mount /swift-storage
++ sudo rm -rf /var/log/swift
++ chown swift:swift /srv/node/sdb1
++ sudo rm -rf /var/log/swift
+sudo: unable to resolve host swiftstorage2nd
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ cat
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ chown swift:swift /srv/node/sdb1
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
++ cat
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
++ grep '$STORAGE_DISK' /etc/fstab
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service rsync restart
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
++ '[' 1 = 1 ']'
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
+	LC_PAPER = "it_IT.UTF-8",
++ mkdir -p /srv/node/sdb1
++ sudo rm -rf /var/log/swift
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ mount /swift-storage
++ service rsync restart
++ chown swift:swift /srv/node/sdb1
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ cat
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
++ sudo rm -rf /var/log/swift
++ cat
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
++ cat
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ cat
++ service rsync restart
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ rm -Rf unused-account-server
++ chown swift:swift /srv/node/sdb1
++ mv -f container-server unused-container-server
++ cat
+mv: cannot stat `container-server'+ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+: No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
++ sudo rm -rf /var/log/swift
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ service rsync restart
++ '[' 10.10.242.57 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.57 ']'
++ swift-init account-server restart
++ chown swift:swift /srv/node/sdb1
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ sudo rm -rf /var/log/swift
++ cat
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service rsync restart
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ cat
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service rsync restart
++ swift-init account-auditor stop
++ chown swift:swift /srv/node/sdb1
++ sudo rm -rf /var/log/swift
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ cat
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service rsync restart
++ cat
++ cat
++ grep '$STORAGE_DISK' /etc/fstab
++ cat
++ '[' 1 = 1 ']'
++ cat
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ cat
++ mount /swift-storage
++ cd /etc/swift
++ rm -Rf unused-account-server
++ cat
++ mv -f account-server unused-account-server
++ cd /etc/swift
++ rm -Rf unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
++ mv -f container-server unused-container-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ mv -f container-server unused-container-server
++ mv -f object-server unused-container-server
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ grep '$STORAGE_DISK' /etc/fstab
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ mv -f object-server unused-container-server
++ '[' 10.10.242.7 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 1 = 1 ']'
++ '[' 10.10.242.7 == 10.10.242.46 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.6 ']'
++ mkdir -p /srv/node/sdb1
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.50 ']'
+mv: cannot stat `object-server'+ for i in '$CONTAINER_HOSTS'
+: No such file or directory+ '[' 10.10.242.7 == 10.10.242.10 ']'
+
++ mount /swift-storage
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.53 ']'
++ for i in '$ACCOUNT_HOSTS'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.8 ']'
++ '[' 10.10.242.7 == 10.10.242.7 ']'
++ for i in '$ACCOUNT_HOSTS'
++ swift-init object-server restart
++ '[' 10.10.242.11 == 10.10.242.45 ']'
++ cat
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ cat
++ '[' 10.10.242.11 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.11 == 10.10.242.11 ']'
++ swift-init object-server restart
++ cat
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
++ mv -f container-server unused-container-server
++ cat
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ cat
++ mv -f object-server unused-container-server
++ cat
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.45 ']'
++ grep '$STORAGE_DISK' /etc/fstab
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.57 ']'
++ cd /etc/swift
++ for i in '$CONTAINER_HOSTS'
++ rm -Rf unused-account-server
++ '[' 10.10.242.9 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.49 ']'
++ '[' 1 = 1 ']'
++ for i in '$CONTAINER_HOSTS'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ '[' 10.10.242.9 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.53 ']'
++ mv -f account-server unused-account-server
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.9 ']'
++ swift-init object-server restart
++ grep '$STORAGE_DISK' /etc/fstab
++ mount /swift-storage
+mv: cannot stat `account-server': No such file or directory
++ '[' 1 = 1 ']'
++ rm -Rf unused-account-server
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mv -f container-server unused-container-server
++ mount /swift-storage
++ grep '$STORAGE_DISK' /etc/fstab
+mv: cannot stat `container-server': No such file or directory
++ '[' 1 = 1 ']'
++ rm -Rf unused-container-server
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mv -f object-server unused-container-server
++ mount /swift-storage
++ cat
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.8 ']'
++ swift-init account-server restart
++ cat
++ cat
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ cat
++ rm -Rf unused-account-server
++ cat
++ mv -f container-server unused-container-server
+mv: cannot stat `container-server'+ cat
+: No such file or directory
++ rm -Rf unused-container-server
++ cd /etc/swift
++ mv -f object-server unused-container-server
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
+mv: cannot stat `account-server'+ '[' 10.10.242.49 == 10.10.242.57 ']'
+: No such file or directory
++ for i in '$CONTAINER_HOSTS'
++ chown swift:swift /srv/node/sdb1
++ '[' 10.10.242.49 == 10.10.242.47 ']'
++ rm -Rf unused-account-server
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.49 ']'
++ swift-init container-server restart
++ mv -f container-server unused-container-server
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
++ sudo rm -rf /var/log/swift
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.53 ']'
++ swift-init object-server restart
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ chown swift:swift /srv/node/sdb1
++ cat
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ sudo rm -rf /var/log/swift
++ cat
++ cat
++ service rsync restart
++ cat
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ rm -Rf unused-account-server
++ mv -f container-server unused-container-server
++ cat
+mv: cannot stat `container-server'+ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+: No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
+perl: warning: Setting locale failed.
++ chown swift:swift /srv/node/sdb1
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ service rsync restart
++ '[' 10.10.242.45 == 10.10.242.45 ']'
++ swift-init account-server restart
++ chown swift:swift /srv/node/sdb1
++ sudo rm -rf /var/log/swift
++ sudo rm -rf /var/log/swift
++ chown swift:swift /srv/node/sdb1
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ sudo rm -rf /var/log/swift
++ cat
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
++ cat
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
++ service rsync restart
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ cat
++ service rsync restart
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service rsync restart
++ cat
++ cat
++ cat
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
++ mv -f container-server unused-container-server
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
++ cat
++ service rsync stop
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.8 ']'
++ cat
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.49 ']'
++ cat
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.50 ']'
++ swift-init container-server restart
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
++ mv -f container-server unused-container-server
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
++ rm -f /swift-storage
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.47 ']'
++ swift-init container-server restart
++ rm -R -f /srv/node/sdb1
++ cat
++ truncate -s 512M /swift-storage
++ cat
++ cat
++ mkfs.xfs -i size=512 /swift-storage
++ cat
++ cd /etc/swift
++ rm -Rf unused-account-server
++ cat
++ mv -f account-server unused-account-server
++ cat
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f container-server unused-container-server
++ cat
++ mv -f account-server unused-account-server
+mv: cannot stat `container-server': No such file or directory
++ cat
++ rm -Rf unused-container-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
++ cat
++ mv -f object-server unused-container-server
++ mv -f container-server unused-container-server
++ cd /etc/swift
+mv: + rm -Rf unused-account-server
+cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.46 ']'
++ swift-init account-server restart
+mv: + mv -f account-server unused-account-server
+cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
+mv: cannot stat `object-server'+ mv -f container-server unused-container-server
+: No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.6 ']'
++ swift-init account-server restart
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.10 ']'
++ swift-init container-server restart
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mount /swift-storage
++ chown swift:swift /srv/node/sdb1
++ sudo rm -rf /var/log/swift
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ swift-init account-replicator restart
++ cat
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service rsync restart
++ swift-init object-replicator restart
++ swift-init object-replicator restart
++ cat
++ cat
++ cat
++ swift-init object-replicator restart
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
++ mv -f container-server unused-container-server
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
++ swift-init account-replicator restart
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.51 ']'
++ swift-init object-server restart
++ swift-init object-replicator restart
++ swift-init container-server stop
++ swift-init container-replicator restart
++ swift-init account-replicator restart
++ swift-init container-replicator restart
++ swift-init account-replicator restart
++ swift-init container-replicator restart
++ swift-init container-replicator restart
++ swift-init container-replicator stop
++ swift-init account-replicator restart
++ swift-init account-auditor restart
++ swift-init container-updater stop
++ swift-init object-replicator restart
++ swift-init account-auditor restart
++ swift-init account-auditor restart
++ swift-init container-updater restart
++ swift-init object-updater restart
++ swift-init object-updater restart
++ swift-init object-updater restart
++ swift-init object-updater restart
++ swift-init container-auditor stop
++ swift-init account-auditor restart
++ swift-init container-updater restart
++ swift-init container-updater restart
++ swift-init container-updater restart
++ swift-init account-auditor restart
++ swift-init account-server stop
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.57 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.57
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.8 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.8
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.45 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.45
++ swift-init container-auditor restart
++ swift-init account-replicator stop
++ swift-init object-auditor restart
++ swift-init object-auditor restart
++ swift-init object-auditor restart
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.6 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.6
++ swift-init container-auditor restart
++ swift-init object-updater restart
++ swift-init container-auditor restart
++ swift-init object-auditor restart
++ swift-init container-auditor restart
++ swift-init account-auditor stop
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.46 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.46
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.49 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.49
++ service rsync stop
++ STORAGE_DISK=/swift-storage
++ umount /srv/node/sdb1
++ rm -f /swift-storage
++ rm -R -f /srv/node/sdb1
++ truncate -s 512M /swift-storage
++ mkfs.xfs -i size=512 /swift-storage
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.50 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.50
++ echo 'All done. Bye!'
+Done with 10.10.242.11
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.7 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.7
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.48 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.47 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.47
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.9 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.9
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.10 == 10.10.242.11 ']'
++ for i in '$OBJECT_HOSTS'
++ echo 'All done. Bye!'
++ '[' 10.10.242.53 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.53 == 10.10.242.11 ']'
+Done with 10.10.242.10
++ echo 'All done. Bye!'
+Done with 10.10.242.53
++ swift-init object-auditor restart
++ grep '$STORAGE_DISK' /etc/fstab
++ '[' 1 = 1 ']'
++ echo '/swift-storage /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0'
++ mkdir -p /srv/node/sdb1
++ mount /swift-storage
++ chown swift:swift /srv/node/sdb1
++ sudo rm -rf /var/log/swift
++ find /var/cache/swift -type f -name '*.recon' -exec rm -f '{}' ';'
++ cat
++ perl -pi -e s/RSYNC_ENABLE=false/RSYNC_ENABLE=true/ /etc/default/rsync
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
++ service rsync restart
++ cat
++ cat
++ cat
++ cd /etc/swift
++ rm -Rf unused-account-server
++ mv -f account-server unused-account-server
+mv: cannot stat `account-server': No such file or directory
++ rm -Rf unused-account-server
++ mv -f container-server unused-container-server
+mv: cannot stat `container-server': No such file or directory
++ rm -Rf unused-container-server
++ mv -f object-server unused-container-server
+mv: cannot stat `object-server': No such file or directory
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.8 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.45 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.46 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.6 ']'
++ for i in '$ACCOUNT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.57 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.47 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.48 ']'
++ swift-init container-server restart
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.51 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.51
++ swift-init container-replicator restart
++ swift-init container-updater restart
++ swift-init container-auditor restart
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.49 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.50 ']'
++ for i in '$CONTAINER_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.10 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.53 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.7 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.9 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.51 ']'
++ for i in '$OBJECT_HOSTS'
++ '[' 10.10.242.48 == 10.10.242.11 ']'
++ echo 'All done. Bye!'
+Done with 10.10.242.48
+Done Done
+mkdir: cannot create directory ‘logs’: File exists
+Warning: Permanently added '10.10.242.55' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.55' (ECDSA) to the list of known hosts.
+Done installing the load balancer
+examples/store_and_retrieve_character.sh: line 11: examples_configuration.sh: No such file or directory
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+
+
+curl: (3) <url> malformed
+curl: (3) <url> malformed
+curl: (3) <url> malformed
+examples/store_and_retrieve_character.sh: line 11: examples_configuration.sh: No such file or directory
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+
+
+curl: (3) <url> malformed
+curl: (3) <url> malformed
+curl: (3) <url> malformed
+INFO:SwiftStack Benchmark (ssbench version 0.2.23)
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-0.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 2 --batch-size 1 0
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-1.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 2 --batch-size 1 1
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-2.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 2 --batch-size 1 2
+INFO:Starting scenario run for "Zero-byte upload test"
+INFO:Ensuring 80 containers (ssbench_*) exist; concurrency=10...
+INFO:Initializing cluster with stock data (up to 6 concurrent workers)
+INFO:Starting benchmark run (up to 6 concurrent workers)
+Benchmark Run:
+  X    work job raised an exception
+  .  <  1s first-byte-latency
+  o  <  3s first-byte-latency
+  O  < 10s first-byte-latency
+  * >= 10s first-byte-latency
+  _  <  1s last-byte-latency  (CREATE or UPDATE)
+  |  <  3s last-byte-latency  (CREATE or UPDATE)
+  ^  < 10s last-byte-latency  (CREATE or UPDATE)
+  @ >= 10s last-byte-latency  (CREATE or UPDATE)
+______________________|_|________________|||||________________________________________________________________________________________________________________________|||___|_|_||_____|||||||||_______________||||_|_|||___|||||_____________________________________|_______|________^^_^___^||||___________________|_|||__|||_______|^^^^^||||||_|||||______||||||_____________________________________________________^^^_^^||||||_______^^^||^^||^|^^^^|^|||_|^^^^^^|||^^|||_|||||^||||___|||||_||^^_|_______|____^^^^__^||||__|____||||__|||_|_^^_^^|||||_|^|_||^|||__||_|________________________|||________||||__|_____|_||^^
+INFO:Deleting population objects from cluster
+INFO:Calculating statistics...
+INFO:Scenario run results saved to /tmp/ssbench-results/Zero-byte_upload_test.u6.o613.r-.2014-08-12.142210.stat.gz
+INFO:You may generate a report with:
+  /usr/local/bin/ssbench-master report-scenario -s /tmp/ssbench-results/Zero-byte_upload_test.u6.o613.r-.2014-08-12.142210.stat.gz
+
+Zero-byte upload test  (generated with ssbench version 0.2.23)
+Worker count:   3   Concurrency:   6  Ran 2014-08-12 12:22:28 UTC to 2014-08-12 12:24:33 UTC (125s)
+
+% Ops    C   R   U   D       Size Range       Size Name
+100%   % 100   0   0   0        0  B           zero
+---------------------------------------------------------------------
+        100   0   0   0      CRUD weighted average
+
+TOTAL
+       Count:   613 (    0 error;     0 retries:  0.00%)  Average requests per second:   4.9
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.224 -   5.058    1.063  (  0.965)    0.642  (all obj sizes)  txd861ff05e5b047f390122-0053ea0746
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    zero objs)  
+       Last-byte  latency:  0.224 -   5.058    1.063  (  0.965)    0.642  (    zero objs)  txd861ff05e5b047f390122-0053ea0746
+
+CREATE
+       Count:   613 (    0 error;     0 retries:  0.00%)  Average requests per second:   4.9
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.224 -   5.058    1.063  (  0.965)    0.642  (all obj sizes)  txd861ff05e5b047f390122-0053ea0746
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    zero objs)  
+       Last-byte  latency:  0.224 -   5.058    1.063  (  0.965)    0.642  (    zero objs)  txd861ff05e5b047f390122-0053ea0746
+
+Distribution of requests per worker-ID: 204.000 - 205.000 (avg: 204.333; stddev:   0.471)

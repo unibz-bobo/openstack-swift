@@ -1,0 +1,429 @@
+Updating on 10.10.242.97
+Updating on 10.10.242.12
+Updating on 10.10.242.10
+Updating on 10.10.242.47
+Updating on 10.10.242.53
+Updating on 10.10.242.98
+Updating on 10.10.242.52
+Updating on 10.10.242.11
+Updating on 10.10.242.99
+Updating on 10.10.242.59
+Updating on 10.10.242.9
+Updating on 10.10.242.49
+Updating on 10.10.242.56
+Updating on 10.10.242.6
+Updating on 10.10.242.45
+Updating on 10.10.242.46
+Updating on 10.10.242.60
+Updating on 10.10.242.51
+Updating on 10.10.242.50
+Updating on 10.10.242.54
+Warning: Permanently added '10.10.242.47' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.10' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.98' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.52' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.12' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.99' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.53' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.97' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.11' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.46' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.60' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.56' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.51' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.50' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.49' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.6' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.54' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.59' (ECDSA) to the list of known hosts.
+Warning: Permanently added '10.10.242.45' (ECDSA) to the list of known hosts.
+Done with 10.10.242.98
+Warning: Permanently added '10.10.242.9' (ECDSA) to the list of known hosts.
+Done with 10.10.242.53
+Done with 10.10.242.47
+Done with 10.10.242.97
+Done with 10.10.242.52
+Done with 10.10.242.99
+Done with 10.10.242.12
+Done with 10.10.242.46
+Done with 10.10.242.11
+Done with 10.10.242.56
+Done with 10.10.242.10
+Done with 10.10.242.60
+Done with 10.10.242.51
+Done with 10.10.242.50
+Done with 10.10.242.49
+Done with 10.10.242.59
+Done with 10.10.242.6
+Done with 10.10.242.45
+Done with 10.10.242.9
+Done with 10.10.242.54
+##########################
+First node to be setup is:
+##########################
+10.10.242.97
+##########################
+mkdir: cannot create directory ‘logs’: File exists
+Cleaning up 10.10.242.97
+Cleaning up 10.10.242.47
+Cleaning up 10.10.242.10
+Cleaning up 10.10.242.53
+Cleaning up 10.10.242.12
+Cleaning up 10.10.242.11
+Cleanup done for 10.10.242.97
+Cleanup done for 10.10.242.12
+Cleanup done for 10.10.242.53
+Cleanup done for 10.10.242.10
+Cleanup done for 10.10.242.47
+Cleanup done for 10.10.242.11
+Installing 10.10.242.12
+Installing 10.10.242.11
+Installing 10.10.242.53
+Installing 10.10.242.47
+Installing 10.10.242.10
+Done with 10.10.242.12
+Done with 10.10.242.53
+Done with 10.10.242.47
+Done with 10.10.242.11
+Done with 10.10.242.10
+Done Done
+mkdir: cannot create directory ‘logs’: File exists
+Installing 10.10.242.98
+Installing 10.10.242.52
+Installing 10.10.242.99
+Installing 10.10.242.54
+Installing 10.10.242.50
+Installing 10.10.242.56
+Installing 10.10.242.51
+Installing 10.10.242.6
+Installing 10.10.242.46
+Installing 10.10.242.60
+Installing 10.10.242.59
+Installing 10.10.242.9
+Installing 10.10.242.49
+Installing 10.10.242.45
+Done with 10.10.242.98
+Done with 10.10.242.52
+Done with 10.10.242.99
+Done with 10.10.242.59
+Done with 10.10.242.49
+Done with 10.10.242.56
+Done with 10.10.242.54
+Done with 10.10.242.51
+Done with 10.10.242.46
+Done with 10.10.242.6
+Done with 10.10.242.60
+Done with 10.10.242.45
+Done with 10.10.242.50
+Done with 10.10.242.9
+Done Done
+mkdir: cannot create directory ‘logs’: File exists
+Done installing the load balancer
+examples/store_and_retrieve_character.sh: line 11: examples_configuration.sh: No such file or directory
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+
+
+curl: (3) <url> malformed
+curl: (3) <url> malformed
+curl: (3) <url> malformed
+examples/store_and_retrieve_character.sh: line 11: examples_configuration.sh: No such file or directory
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+
+
+curl: (3) <url> malformed
+curl: (3) <url> malformed
+curl: (3) <url> malformed
+INFO:SwiftStack Benchmark (ssbench version 0.2.23)
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-0.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 0
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-1.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 1
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-2.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 2
+INFO:Starting scenario run for "Zero-byte upload test"
+INFO:Ensuring 80 containers (ssbench_*) exist; concurrency=10...
+INFO:Initializing cluster with stock data (up to 8 concurrent workers)
+INFO:Starting benchmark run (up to 8 concurrent workers)
+Benchmark Run:
+  X    work job raised an exception
+  .  <  1s first-byte-latency
+  o  <  3s first-byte-latency
+  O  < 10s first-byte-latency
+  * >= 10s first-byte-latency
+  _  <  1s last-byte-latency  (CREATE or UPDATE)
+  |  <  3s last-byte-latency  (CREATE or UPDATE)
+  ^  < 10s last-byte-latency  (CREATE or UPDATE)
+  @ >= 10s last-byte-latency  (CREATE or UPDATE)
+_______|___||_|||_____________________|||||____|____________________________________________________________________|_________________________________________________________________________________________________________________________________________________||______|||_||^_|_|||_|||||||||^||^^_||||||||^|||||^|^^^^__^_^^__^^^__^^^_|^||_|___||____________________________________|___________________________|__|________________|_______^^^^^_^^^__||||||||||||_^^^_^^_^^_^^^^^^^_^__^^^^^_^_||_^^^^^^^^^^^|||_|____^^__^_^||||||_|||_|____||||_|||_||||^|||^^||||^|^||^||^||||^|||||||_|_^^_^__^^^_^^__^^^^__^__^__^^
+INFO:Deleting population objects from cluster
+INFO:Calculating statistics...
+INFO:Scenario run results saved to /tmp/ssbench-results/Zero-byte_upload_test.u8.o613.r-.2014-09-05.182758.stat.gz
+INFO:You may generate a report with:
+  /usr/local/bin/ssbench-master report-scenario -s /tmp/ssbench-results/Zero-byte_upload_test.u8.o613.r-.2014-09-05.182758.stat.gz
+
+Zero-byte upload test  (generated with ssbench version 0.2.23)
+Worker count:   3   Concurrency:   8  Ran 2014-09-05 16:28:23 UTC to 2014-09-05 16:30:04 UTC (101s)
+
+% Ops    C   R   U   D       Size Range       Size Name
+100%   % 100   0   0   0        0  B           zero
+---------------------------------------------------------------------
+        100   0   0   0      CRUD weighted average
+
+TOTAL
+       Count:   613 (    0 error;     0 retries:  0.00%)  Average requests per second:   6.1
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.229 -   5.384    1.219  (  1.124)    0.624  (all obj sizes)  txba9373e331b1450cbe86c-005409e4ea
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    zero objs)  
+       Last-byte  latency:  0.229 -   5.384    1.219  (  1.124)    0.624  (    zero objs)  txba9373e331b1450cbe86c-005409e4ea
+
+CREATE
+       Count:   613 (    0 error;     0 retries:  0.00%)  Average requests per second:   6.1
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.229 -   5.384    1.219  (  1.124)    0.624  (all obj sizes)  txba9373e331b1450cbe86c-005409e4ea
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    zero objs)  
+       Last-byte  latency:  0.229 -   5.384    1.219  (  1.124)    0.624  (    zero objs)  txba9373e331b1450cbe86c-005409e4ea
+
+Distribution of requests per worker-ID: 204.000 - 205.000 (avg: 204.333; stddev:   0.471)
+INFO:SwiftStack Benchmark (ssbench version 0.2.23)
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-0.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 0
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-1.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 1
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-2.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 2
+INFO:Starting scenario run for "Small test scenario"
+INFO:Ensuring 80 containers (ssbench_*) exist; concurrency=10...
+INFO:Initializing cluster with stock data (up to 8 concurrent workers)
+INFO:Starting benchmark run (up to 8 concurrent workers)
+Benchmark Run:
+  X    work job raised an exception
+  .  <  1s first-byte-latency
+  o  <  3s first-byte-latency
+  O  < 10s first-byte-latency
+  * >= 10s first-byte-latency
+  _  <  1s last-byte-latency  (CREATE or UPDATE)
+  |  <  3s last-byte-latency  (CREATE or UPDATE)
+  ^  < 10s last-byte-latency  (CREATE or UPDATE)
+  @ >= 10s last-byte-latency  (CREATE or UPDATE)
+.._____._|_____.|___.__|.___||_|__.._|_||||__|__||___|__..^|o_._||_|||__|_||_|||_^o|||.___._||..__.|._|.|__||_.|._.___||_|||_|___|.__||___|._..|_|.___...__.____||_.||||_..||__|____|___|___._____.__________________._|___|||.__||_|||_.__________._||.|_|__|_|_____|_._||_||__||||||||_.__||.___.^_.||.||._||||._|________||.||__.|..|__|__.|___|__|^._^__|_|||_.__|___.|.__..||___.._|||_||.|___||.___.__|||||...__|||||_._|_||||_.|||.|._||||.||||||^||||||_||._|||^_..__o.._.__|_||_|..|||||_|_||_|||||||_|__..|.|||||||_..||__|_|._|.|.|||_|_._._|__||.|____||||__|_||__o__|_||____.|.|__||.________._..____.____|__._____|__||
+INFO:Deleting population objects from cluster
+INFO:Calculating statistics...
+
+Small test scenario  (generated with ssbench version 0.2.23)
+Worker count:   3   Concurrency:   8  Ran 2014-09-05 16:31:44 UTC to 2014-09-05 16:33:05 UTC (80s)
+
+% Ops    C   R   U   D       Size Range       Size Name
+ 45%   % 50  17  17  17        1 kB -  16 kB  tiny
+ 45%   % 50  17  17  17      100 kB - 200 kB  small
+  9%   % 50  17  17  17        1 MB -   2 MB  medium
+---------------------------------------------------------------------
+         50  17  17  17      CRUD weighted average
+
+TOTAL
+       Count:   613 (    0 error;     0 retries:  0.00%)  Average requests per second:   7.6
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  0.087 -   1.516    0.243  (  0.259)    0.162  (all obj sizes)  tx668f5661f51d4d8ab0df2-005409e570
+       Last-byte  latency:  0.087 -   4.208    0.968  (  0.647)    0.882  (all obj sizes)  txcd24a7ca49154ae79e33d-005409e58e
+       First-byte latency:  0.087 -   0.858    0.209  (  0.176)    0.142  (    tiny objs)  tx0ed0a7e91b4d4f4dab4d3-005409e580
+       Last-byte  latency:  0.087 -   2.789    0.857  (  0.537)    0.821  (    tiny objs)  txb4164f3145654a00b5ea1-005409e588
+       First-byte latency:  0.095 -   1.516    0.261  (  0.297)    0.171  (   small objs)  tx668f5661f51d4d8ab0df2-005409e570
+       Last-byte  latency:  0.120 -   3.120    0.908  (  0.548)    0.894  (   small objs)  tx4fd52870c70a4ac788000-005409e587
+       First-byte latency:  0.103 -   1.122    0.285  (  0.314)    0.140  (  medium objs)  txc673f3d510964f51b253a-005409e56a
+       Last-byte  latency:  0.212 -   4.208    1.853  (  0.916)    1.788  (  medium objs)  txcd24a7ca49154ae79e33d-005409e58e
+
+CREATE
+       Count:   288 (    0 error;     0 retries:  0.00%)  Average requests per second:   3.6
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.237 -   3.803    1.173  (  0.647)    1.006  (all obj sizes)  tx918fa7847e854c719043f-005409e59c
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    tiny objs)  
+       Last-byte  latency:  0.237 -   2.789    0.990  (  0.513)    0.896  (    tiny objs)  txb4164f3145654a00b5ea1-005409e588
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (   small objs)  
+       Last-byte  latency:  0.382 -   3.120    1.158  (  0.552)    1.014  (   small objs)  tx4fd52870c70a4ac788000-005409e587
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (  medium objs)  
+       Last-byte  latency:  1.096 -   3.803    2.231  (  0.700)    2.061  (  medium objs)  tx918fa7847e854c719043f-005409e59c
+
+READ
+       Count:   103 (    0 error;     0 retries:  0.00%)  Average requests per second:   1.3
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  0.087 -   1.516    0.243  (  0.259)    0.162  (all obj sizes)  tx668f5661f51d4d8ab0df2-005409e570
+       Last-byte  latency:  0.087 -   3.377    0.366  (  0.467)    0.217  (all obj sizes)  txc673f3d510964f51b253a-005409e56a
+       First-byte latency:  0.087 -   0.858    0.209  (  0.176)    0.142  (    tiny objs)  tx0ed0a7e91b4d4f4dab4d3-005409e580
+       Last-byte  latency:  0.087 -   0.859    0.210  (  0.176)    0.143  (    tiny objs)  tx0ed0a7e91b4d4f4dab4d3-005409e580
+       First-byte latency:  0.095 -   1.516    0.261  (  0.297)    0.171  (   small objs)  tx668f5661f51d4d8ab0df2-005409e570
+       Last-byte  latency:  0.120 -   1.687    0.331  (  0.331)    0.226  (   small objs)  tx668f5661f51d4d8ab0df2-005409e570
+       First-byte latency:  0.103 -   1.122    0.285  (  0.314)    0.140  (  medium objs)  txc673f3d510964f51b253a-005409e56a
+       Last-byte  latency:  0.382 -   3.377    1.181  (  0.882)    0.785  (  medium objs)  txc673f3d510964f51b253a-005409e56a
+
+UPDATE
+       Count:   115 (    0 error;     0 retries:  0.00%)  Average requesINFO:Scenario run results saved to /tmp/ssbench-results/Small_test_scenario.u8.o613.r-.2014-09-05.183137.stat.gz
+INFO:You may generate a report with:
+  /usr/local/bin/ssbench-master report-scenario -s /tmp/ssbench-results/Small_test_scenario.u8.o613.r-.2014-09-05.183137.stat.gz
+ts per second:   1.4
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.299 -   4.208    1.102  (  0.596)    0.997  (all obj sizes)  txcd24a7ca49154ae79e33d-005409e58e
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    tiny objs)  
+       Last-byte  latency:  0.299 -   2.567    0.961  (  0.450)    0.899  (    tiny objs)  txab159f68c9614db6bb632-005409e596
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (   small objs)  
+       Last-byte  latency:  0.327 -   1.847    1.022  (  0.385)    0.997  (   small objs)  tx31eb938bc012499996333-005409e5ae
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (  medium objs)  
+       Last-byte  latency:  1.295 -   4.208    2.405  (  0.791)    2.195  (  medium objs)  txcd24a7ca49154ae79e33d-005409e58e
+
+DELETE
+       Count:   107 (    0 error;     0 retries:  0.00%)  Average requests per second:   1.4
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.203 -   2.272    0.852  (  0.430)    0.799  (all obj sizes)  tx4cc0d3bb35fa447cb99a5-005409e58c
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    tiny objs)  
+       Last-byte  latency:  0.265 -   2.272    0.903  (  0.506)    0.822  (    tiny objs)  tx4cc0d3bb35fa447cb99a5-005409e58c
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (   small objs)  
+       Last-byte  latency:  0.203 -   1.716    0.779  (  0.340)    0.755  (   small objs)  tx2b3e0db68d984dc4bda51-005409e59e
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (  medium objs)  
+       Last-byte  latency:  0.212 -   1.333    0.954  (  0.323)    0.960  (  medium objs)  txdf7df241bbd34dca9357a-005409e5a6
+
+Distribution of requests per worker-ID: 204.000 - 205.000 (avg: 204.333; stddev:   0.471)
+INFO:SwiftStack Benchmark (ssbench version 0.2.23)
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-0.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 0
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-1.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 1
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-2.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 2
+INFO:Starting scenario run for "Zero-byte upload test"
+INFO:Ensuring 80 containers (ssbench_*) exist; concurrency=10...
+INFO:Initializing cluster with stock data (up to 8 concurrent workers)
+INFO:Starting benchmark run (up to 8 concurrent workers)
+Benchmark Run:
+  X    work job raised an exception
+  .  <  1s first-byte-latency
+  o  <  3s first-byte-latency
+  O  < 10s first-byte-latency
+  * >= 10s first-byte-latency
+  _  <  1s last-byte-latency  (CREATE or UPDATE)
+  |  <  3s last-byte-latency  (CREATE or UPDATE)
+  ^  < 10s last-byte-latency  (CREATE or UPDATE)
+  @ >= 10s last-byte-latency  (CREATE or UPDATE)
+_________________________________|__________________________________________|_||_|||____|_|__||_|||_|||||||_||__||||_________|____|||_|||||_|||||||||||_|^^|__^__|||||||_|||__||_||_|_|_|__|__||||__||||__________________|||_||_|||_||__|||||||_____||||_____|__|__||_|_||_|||||||_________||__||||_|||___|||_|___|___||_||||______||||||||_|||||||_|_|||||||||||_|_|||__|_||||||_||_|_|||_|________|__________________________________________________________________________________________________________________|||_|||________________|___||_||||||_||__|||_|||||||||||||__|____|_||_||||||||||_|||||||||_|^||||||^^|^|^|||^
+INFO:Deleting population objects from cluster
+INFO:Calculating statistics...
+INFO:Scenario run results saved to /tmp/ssbench-results/Zero-byte_upload_test.u8.o613.r-.2014-09-05.183333.stat.gz
+INFO:You may generate a report with:
+  /usr/local/bin/ssbench-master report-scenario -s /tmp/ssbench-results/Zero-byte_upload_test.u8.o613.r-.2014-09-05.183333.stat.gz
+
+Zero-byte upload test  (generated with ssbench version 0.2.23)
+Worker count:   3   Concurrency:   8  Ran 2014-09-05 16:33:37 UTC to 2014-09-05 16:35:02 UTC (84s)
+
+% Ops    C   R   U   D       Size Range       Size Name
+100%   % 100   0   0   0        0  B           zero
+---------------------------------------------------------------------
+        100   0   0   0      CRUD weighted average
+
+TOTAL
+       Count:   613 (    0 error;     0 retries:  0.00%)  Average requests per second:   7.3
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.230 -   6.215    1.016  (  0.645)    0.841  (all obj sizes)  txca93cc504f51420896922-005409e625
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    zero objs)  
+       Last-byte  latency:  0.230 -   6.215    1.016  (  0.645)    0.841  (    zero objs)  txca93cc504f51420896922-005409e625
+
+CREATE
+       Count:   613 (    0 error;     0 retries:  0.00%)  Average requests per second:   7.3
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.230 -   6.215    1.016  (  0.645)    0.841  (all obj sizes)  txca93cc504f51420896922-005409e625
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    zero objs)  
+       Last-byte  latency:  0.230 -   6.215    1.016  (  0.645)    0.841  (    zero objs)  txca93cc504f51420896922-005409e625
+
+Distribution of requests per worker-ID: 204.000 - 205.000 (avg: 204.333; stddev:   0.471)
+INFO:SwiftStack Benchmark (ssbench version 0.2.23)
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-0.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 0
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-1.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 1
+INFO:Spawning local ssbench-worker (logging to /tmp/ssbench-worker-local-2.log) with ssbench-worker --zmq-host 127.0.0.1 --zmq-work-port 13579 --zmq-results-port 13580 --concurrency 3 --batch-size 1 2
+INFO:Starting scenario run for "Small test scenario"
+INFO:Ensuring 80 containers (ssbench_*) exist; concurrency=10...
+INFO:Initializing cluster with stock data (up to 8 concurrent workers)
+INFO:Starting benchmark run (up to 8 concurrent workers)
+Benchmark Run:
+  X    work job raised an exception
+  .  <  1s first-byte-latency
+  o  <  3s first-byte-latency
+  O  < 10s first-byte-latency
+  * >= 10s first-byte-latency
+  _  <  1s last-byte-latency  (CREATE or UPDATE)
+  |  <  3s last-byte-latency  (CREATE or UPDATE)
+  ^  < 10s last-byte-latency  (CREATE or UPDATE)
+  @ >= 10s last-byte-latency  (CREATE or UPDATE)
+._.._____.____.__________.___.__.____||___.___|||.____||._|_|_._||________|_.|_____|__._._|____._._______.____||_|_.._____|___.|||.___|_|_________..__.___.__||_||_||._|___._|__|.||||||__|_||_.____.||||||_|____||_._..________.||..|.|__|||._._|||.|||___|._^|____..^._||.___|.^___|_|_.|_____||.||_|||.|_||||._||.|___^.^^_|_.|.O|^|__|.____|||_.|_o|^||^_o.|^|_^|^..|_|_||.^||___|.|||____|_|||||||_|||_||____.||__|_||_|.___.____.__._|___||__|^^^^^__.^|.|O___|_||_||_.|||_|..|.||.|__||||__||_|||.|_|___.____|^^O||___.___.___.|||_|||______|_|_||||_o._||_.______.._________.___._____.___|||___.____.|||_.|_|__.|___|__._o^^
+INFO:Deleting population objects from cluster
+INFO:Calculating statistics...
+
+Small test scenario  (generated with ssbench version 0.2.23)
+Worker count:   3   Concurrency:   8  Ran 2014-09-05 16:36:38 UTC to 2014-09-05 16:38:05 UTC (86s)
+
+% Ops    C   R   U   D       Size Range       Size Name
+ 45%   % 50  17  17  17        1 kB -  16 kB  tiny
+ 45%   % 50  17  17  17      100 kB - 200 kB  small
+  9%   % 50  17  17  17        1 MB -   2 MB  medium
+---------------------------------------------------------------------
+         50  17  17  17      CRUD weighted average
+
+TOTAL
+       Count:   613 (    0 error;     0 retries:  0.00%)  Average requests per second:   7.1
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  0.085 -   4.147    0.378  (  0.684)    0.175  (all obj sizes)  txd87645079445444689af8-005409e6c6
+       Last-byte  latency:  0.085 -   7.631    1.019  (  0.903)    0.835  (all obj sizes)  txc5384eb303cd4f70b5665-005409e6c4
+       First-byte latency:  0.085 -   2.284    0.251  (  0.366)    0.145  (    tiny objs)  txd88d7924053e4a9f804b9-005409e6df
+       Last-byte  latency:  0.085 -   4.220    0.825  (  0.608)    0.775  (    tiny objs)  tx6b33cf70d34d4ebaa8988-005409e6c6
+       First-byte latency:  0.095 -   3.843    0.361  (  0.575)    0.221  (   small objs)  tx50fe88bb20314c16877bd-005409e6d0
+       Last-byte  latency:  0.115 -   4.669    0.937  (  0.680)    0.836  (   small objs)  tx2a136b9a19cb4300bfee1-005409e6c5
+       First-byte latency:  0.092 -   4.147    0.861  (  1.343)    0.248  (  medium objs)  txd87645079445444689af8-005409e6c6
+       Last-byte  latency:  0.309 -   7.631    2.337  (  1.655)    2.032  (  medium objs)  txc5384eb303cd4f70b5665-005409e6c4
+
+CREATE
+       Count:   327 (    0 error;     0 retries:  0.00%)  Average requests per second:   3.8
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.242 -   6.525    1.190  (  0.877)    0.995  (all obj sizes)  tx0369c0da09a1450198869-005409e6ac
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    tiny objs)  
+       Last-byte  latency:  0.242 -   4.220    0.951  (  0.585)    0.856  (    tiny objs)  tx6b33cf70d34d4ebaa8988-005409e6c6
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (   small objs)  
+       Last-byte  latency:  0.330 -   4.669    1.146  (  0.748)    0.996  (   small objs)  tx2a136b9a19cb4300bfee1-005409e6c5
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (  medium objs)  
+       Last-byte  latency:  1.053 -   6.525    2.578  (  1.302)    2.090  (  medium objs)  tx0369c0da09a1450198869-005409e6ac
+
+READ
+       Count:    98 (    0 error;     0 retries:  0.00%)  Average requests per second:   1.1
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  0.085 -   4.147    0.378  (  0.684)    0.175  (all obj sizes)  txd87645079445444689af8-005409e6c6
+       Last-byte  latency:  0.085 -   7.631    0.630  (  1.230)    0.249  (all obj sizes)  txc5384eb303cd4f70b5665-005409e6c4
+       First-byte latency:  0.085 -   2.284    0.251  (  0.366)    0.145  (    tiny objs)  txd88d7924053e4a9f804b9-005409e6df
+       Last-byte  latency:  0.085 -   2.285    0.252  (  0.366)    0.146  (    tiny objs)  txd88d7924053e4a9f804b9-005409e6df
+       First-byte latency:  0.095 -   3.843    0.361  (  0.575)    0.221  (   small objs)  tx50fe88bb20314c16877bd-005409e6d0
+       Last-byte  latency:  0.115 -   4.325    0.448  (  0.655)    0.257  (   small objs)  tx50fe88bb20314c16877bd-005409e6d0
+       First-byte latency:  0.092 -   4.147    0.861  (  1.343)    0.248  (  medium objs)  txd87645079445444689af8-005409e6c6
+       Last-byte  latency:  0.444 -   7.631    2.571  (  2.424)    1.138  (  medium objs)  txc5384eb303cd4f70b5665-005409e6c4
+
+UPDATE
+       Count:    87 (    0 error;     0 retries:  0.00%)  Average requesINFO:Scenario run results saved to /tmp/ssbench-results/Small_test_scenario.u8.o613.r-.2014-09-05.183628.stat.gz
+INFO:You may generate a report with:
+  /usr/local/bin/ssbench-master report-scenario -s /tmp/ssbench-results/Small_test_scenario.u8.o613.r-.2014-09-05.183628.stat.gz
+ts per second:   1.0
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.334 -   5.372    1.137  (  0.768)    0.944  (all obj sizes)  tx8fb8971cd3c745688f558-005409e6af
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    tiny objs)  
+       Last-byte  latency:  0.334 -   3.717    1.080  (  0.700)    0.936  (    tiny objs)  txd3cbdc77ae6f47cb858f6-005409e6af
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (   small objs)  
+       Last-byte  latency:  0.359 -   2.631    0.973  (  0.462)    0.926  (   small objs)  txc7648ddc25194d15a1d34-005409e6d2
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (  medium objs)  
+       Last-byte  latency:  1.195 -   5.372    2.457  (  1.243)    2.191  (  medium objs)  tx8fb8971cd3c745688f558-005409e6af
+
+DELETE
+       Count:   101 (    0 error;     0 retries:  0.00%)  Average requests per second:   1.2
+                            min       max      avg      std_dev  50%-ile                   Worst latency TX ID
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (all obj sizes)  
+       Last-byte  latency:  0.202 -   3.218    0.743  (  0.388)    0.742  (all obj sizes)  txd4f8e55bde7b44beaee16-005409e6de
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (    tiny objs)  
+       Last-byte  latency:  0.202 -   2.187    0.686  (  0.358)    0.692  (    tiny objs)  tx3296a659c6ee4d878ec96-005409e6ca
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (   small objs)  
+       Last-byte  latency:  0.214 -   1.270    0.751  (  0.240)    0.772  (   small objs)  tx103dd7efa261489bbdf67-005409e6ab
+       First-byte latency:  N/A   -   N/A      N/A    (  N/A  )    N/A    (  medium objs)  
+       Last-byte  latency:  0.309 -   3.218    0.973  (  0.905)    0.672  (  medium objs)  txd4f8e55bde7b44beaee16-005409e6de
+
+Distribution of requests per worker-ID: 204.000 - 205.000 (avg: 204.333; stddev:   0.471)

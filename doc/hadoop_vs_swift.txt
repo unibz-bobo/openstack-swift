@@ -1,0 +1,4 @@
+In this document we can find some differences -> Hadoop vs Swift (openstack module)
+
+
+http://dsl-wiki.cs.uchicago.edu/index.php/Data_Intensive_Scalable_Computing_on_TeraGrid:_A_Comparison_of_MapReduce_and_Swift

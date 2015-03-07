@@ -1,0 +1,10 @@
+http://venturebeat.com/2013/11/19/iron-meet-cloud-openstacks-ironic-makes-dedicated-servers-as-flexible-as-virtualized-services/
+
+This article explains the new ironic driver.
+
+
+http://ma.ttwagner.com/bare-metal-deploys-with-devstack-and-ironic/
+
+example of using ironic + baremetal. ironic in our case should be modified to user our custom "pxe"-like boot process.
+
+http://xcat.sourceforge.net/#start
