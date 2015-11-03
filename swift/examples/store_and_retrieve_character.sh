@@ -8,6 +8,8 @@
 # Project: Thesis !
 # Lorenzo Miori (C) 2014
 
+set -x
+
 source examples_configuration.sh
 
 CONTAINER="lorenzo"

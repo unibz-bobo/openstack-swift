@@ -187,7 +187,7 @@ STORAGE_HOSTS=$ACCOUNT_HOSTS" "$CONTAINER_HOSTS" "$OBJECT_HOSTS
 isRoot
 
 # install dependencies
-#apt-get update
+apt-get update
 getPackage python-software-properties
 #add-apt-repository ppa:swift-core/release
 #apt-get update
@@ -195,6 +195,11 @@ getPackage python-software-properties
 #getPackage python-swiftclient
 getPackage openssh-server
 getPackage openssl
+getPackage python-pip
+getPackage libffi-dev
+getPackage python-dev
+getPackage xfsprogs
+#apt-get --fix-missing
 
 #set +e
 cd && git clone git://github.com/openstack/python-swiftclient.git
@@ -207,6 +212,9 @@ cd && git clone git://github.com/openstack/swift.git
 cd ~/swift; git pull origin master && sudo pip install .
 
 ## Generic
+
+#install requirements
+pip install -r requirements.txt
 
 # add new "swift" user
 useradd -p $(openssl passwd password) swift
