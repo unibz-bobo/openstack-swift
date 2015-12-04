@@ -199,6 +199,7 @@ getPackage python-pip
 getPackage libffi-dev
 getPackage python-dev
 getPackage xfsprogs
+getPackage rsync
 #apt-get --fix-missing
 
 #set +e
