@@ -12,6 +12,8 @@ STORAGE_HOSTS=$PROXY_HOSTS" "$ACCOUNT_HOSTS" "$CONTAINER_HOSTS" "$OBJECT_HOSTS
 
 set +x
 
+chmod 400 stack_rsa
+
 CONTENT_LIST="configurations configuration-default.sh setup-swift-distributed-subsystems.sh"
 
 function deploy() {
