@@ -415,7 +415,7 @@ auth_protocol = http
 auth_uri = http://$HOST_IP:5000/
 admin_tenant_name = service
 admin_user = swift
-admin_password = hastexo
+admin_password = swift
 delay_auth_decision = 0
 
 EOF
@@ -518,17 +518,28 @@ fi
         echo "Installing a storage node"
 
         echo "Quitting running instances..."
+
+        # Stop object server instance(s)
         swift-init object-server stop
         swift-init object-replicator stop
         swift-init object-updater stop
         swift-init object-auditor stop
+        
+        # Stop container server instance(s)
         swift-init container-server stop
         swift-init container-replicator stop
         swift-init container-updater stop
         swift-init container-auditor stop
+        swift-init container-info stop
+        swift-init container-sync stop
+        swift-init container-reconciler stop
+
+        # Stop account server instance(s)
         swift-init account-server stop
         swift-init account-replicator stop
+        swift-init account-updater stop
         swift-init account-auditor stop
+        
         swift-init proxy stop
 
         # For every device on the node, setup the XFS volume (/dev/sdb is used as an example), add mounting option inode64 when your disk is bigger than 1TB to archive a better performance.
@@ -539,21 +550,25 @@ fi
         rm -f $STORAGE_DISK
         rm -R -f /srv/node/sdb1
         ##
-        truncate -s 512M $STORAGE_DISK
-        mkfs.xfs -i size=512 $STORAGE_DISK
+        truncate -s 2048M $STORAGE_DISK
+        mkfs.xfs -i size=1024 $STORAGE_DISK
 #        mkfs.ext2 -F $STORAGE_DISK
-        grep '$STORAGE_DISK' /etc/fstab
-        if [ $? = 1 ]
-        then
-            echo "$STORAGE_DISK /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
-        fi
+        cp /etc/fstab /etc/fstab.backup
+        sed '/^\/swift-storage/d' /etc/fstab > /etc/fstab.new
+        cp /etc/fstab.new /etc/fstab
+#        grep $STORAGE_DISK /etc/fstab
+#        if [ $? = 1 ]
+#        then
+#            echo "$STORAGE_DISK /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
+#        fi
         mkdir -p /srv/node/sdb1
+        echo "$STORAGE_DISK /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
         mount $STORAGE_DISK
-        chown swift:swift /srv/node/sdb1
+        chown swift:swift -R /srv/node
 
         # clean some stuff up!
-        sudo rm -rf /var/log/swift
-#        sudo mkdir -p /var/log/swift/hourly
+        rm -rf /var/log/swift
+        mkdir -p /var/log/swift
 
         find /var/cache/swift* -type f -name *.recon -exec rm -f {} \;
 
@@ -576,13 +591,13 @@ read only = false
 lock file = /var/lock/account.lock
 
 [container]
-max connections = 2
+max connections = 4
 path = /srv/node/
 read only = false
 lock file = /var/lock/container.lock
 
 [object]
-max connections = 2
+max connections = 8
 path = /srv/node/
 read only = false
 lock file = /var/lock/object.lock
@@ -600,9 +615,13 @@ EOF
 
     cat >/etc/swift/account-server.conf <<EOF
 [DEFAULT]
+swift_dir = /etc/swift
+devices = /srv/node
+user = swift
 bind_ip = $HOST_IP
 bind_port = 6002
 workers = 1
+db_preallocation = off
 
 [pipeline:main]
 pipeline = account-server
@@ -613,7 +632,7 @@ use = egg:swift#account
 [account-replicator]
 
 [account-auditor]
-accounts_per_second = 20
+accounts_per_second = 100
 
 [account-reaper]
 EOF
@@ -622,10 +641,13 @@ EOF
 
     cat >/etc/swift/container-server.conf <<EOF
 [DEFAULT]
+swift_dir = /etc/swift
+devices = /srv/node
+user = swift
 bind_ip = $HOST_IP
 bind_port = 6001
 workers = 1
-db_preallocation = on
+db_preallocation = off
 
 [pipeline:main]
 pipeline = container-server
@@ -638,7 +660,7 @@ use = egg:swift#container
 [container-updater]
 
 [container-auditor]
-containers_per_second = 20
+containers_per_second = 100
 
 [container-sync]
 EOF
@@ -647,10 +669,14 @@ EOF
 
     cat >/etc/swift/object-server.conf <<EOF
 [DEFAULT]
+swift_dir = /etc/swift
+devices = /srv/node
+user = swift
 bind_ip = $HOST_IP
 bind_port = 6000
 workers = 1
-db_preallocation = on
+db_preallocation = off
+mount_check = false
 
 [pipeline:main]
 pipeline = object-server
@@ -663,7 +689,7 @@ use = egg:swift#object
 [object-updater]
 
 [object-auditor]
-files_per_second = 2
+files_per_second = 50
 bytes_per_second = 1000000
 EOF
 
