@@ -1,0 +1,13 @@
+
+This file contains the version list for all the used
+software artefacts, including specific tools or otherwise
+crucial/problematic libraries.
+
+operating system distribution
+debian jessie
+
+operating system kernel
+3.18
+
+ssbench-master & ssbench-worker
+0.2.23
