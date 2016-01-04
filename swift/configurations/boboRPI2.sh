@@ -22,10 +22,13 @@ OBJECT_HOSTS="10.10.241.205 10.10.241.206"
 
 # does the script have to create separate zones ?
 # at the moment, a zone is a single group account-container-object
-CREATE_ZONES=1
+CREATE_ZONES=2
 
 # Replication count
 REPLICATION=2
 
 # Partition power (2^n)
 PARTITIONS=7
+
+# OpenStack Swift Release (NOTE: this is the git tag name)
+RELEASE="2.1.0"

@@ -167,6 +167,7 @@ fi
 # at the moment, a zone is a single group account-container-object
 #CREATE_ZONES=0
 
+# include the configuration parameters
 source configuration-default.sh
 
 # group all devices for future use
@@ -202,15 +203,24 @@ getPackage xfsprogs
 getPackage rsync
 #apt-get --fix-missing
 
-#set +e
+# Clone and fetch the defined OpenStack Swift(-client) Release
+
+if [ -z $RELEASE ]
+then
+    # If no release is specified, use the default 2.1.0 on which the system
+    # has been developed
+    RELEASE="2.1.0"
+fi
+
 cd && git clone git://github.com/openstack/python-swiftclient.git
-#set -e
-cd ~/python-swiftclient; git pull origin master && sudo pip install .
+cd ~/python-swiftclient
+git pull origin master && git checkout tags/$RELEASE && sudo pip install .
 
 #set +e
 cd && git clone git://github.com/openstack/swift.git
 #set -e
-cd ~/swift; git pull origin master && sudo pip install .
+cd ~/swift
+git pull origin master && git checkout tags/$RELEASE && sudo pip install .
 
 ## Generic
 
@@ -708,6 +718,7 @@ EOF
         then
             swift-init account-server restart
             swift-init account-replicator restart
+            swift-init account-updater restart
             swift-init account-auditor restart
         fi
     done
@@ -720,6 +731,9 @@ EOF
             swift-init container-replicator restart
             swift-init container-updater restart
             swift-init container-auditor restart
+            swift-init container-info restart
+            swift-init container-sync restart
+            swift-init container-reconciler restart
         fi
     done
 
