@@ -10,7 +10,7 @@
 
 set -x
 
-source examples_configuration.sh
+source $(dirname $0)/examples_configuration.sh
 
 CONTAINER="lorenzo"
 OBJECT_NAME="an_object_for_lorenzo"
