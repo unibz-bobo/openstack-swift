@@ -227,6 +227,13 @@ git pull origin master && git checkout tags/$RELEASE && sudo pip install .
 #install requirements
 pip install -r requirements.txt
 
+#apply manual patches
+for patch_diff in `ls ../patches/*.diff`
+do
+    # -p0 indicates that we are interested in absolute paths
+    patch -p0 $patch_diff
+done
+
 # add new "swift" user
 useradd -p $(openssl passwd password) swift
 
