@@ -231,7 +231,7 @@ pip install -r requirements.txt
 for patch_diff in `ls ../patches/*.diff`
 do
     # -p0 indicates that we are interested in absolute paths
-    patch -p0 $patch_diff
+    patch -p0 < $patch_diff
 done
 
 # add new "swift" user
