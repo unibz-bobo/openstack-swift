@@ -45,6 +45,15 @@ It prepares various configurations on the storage node(s) and starts the necessa
 services.
 
 ################################
+Automatic script
+################################
+
+A script contains all the previously explained steps, just run:
+run-deployment.sh
+A log of the deployment phase can be found under:
+logs/deployment.log
+
+################################
 Done! And now?
 ################################
 
@@ -54,4 +63,4 @@ different proxy thus enhancing throughput and reliability.
 
 That's all folks!
 
-(C) 2014 Lorenzo Miori
+(C) 2014-2016 Lorenzo Miori
