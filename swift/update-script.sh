@@ -14,7 +14,7 @@ set +x
 
 chmod 400 stack_rsa
 
-CONTENT_LIST="configurations configuration-default.sh setup-swift-distributed-subsystems.sh"
+CONTENT_LIST="configurations patches configuration-default.sh setup-swift-distributed-subsystems.sh"
 
 function deploy() {
     echo "Updating on $1"
