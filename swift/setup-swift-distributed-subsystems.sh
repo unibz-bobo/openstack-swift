@@ -213,8 +213,8 @@ getPackage rsync
 # supported filesystem tools: XFS;F2FS; mainly to provide mkfs.xyz
 getPackage xfsprogs
 ## getPackage f2fs-tools --> deprecated; only available on debian whizzy!?!?!?##
-dpkg -i ftp.acc.umu.se/mirror/raspbian/raspbian/pool/main/f/f2fs-tools/libf2fs0_1.6.0-2_armhf.deb
-dpkg -i ftp.acc.umu.se/mirror/raspbian/raspbian/pool/main/f/f2fs-tools/f2fs-tools_1.6.0-2_armhf.deb
+dpkg -i packages/ftp.acc.umu.se/mirror/raspbian/raspbian/pool/main/f/f2fs-tools/libf2fs0_1.6.0-2_armhf.deb
+dpkg -i packages/ftp.acc.umu.se/mirror/raspbian/raspbian/pool/main/f/f2fs-tools/f2fs-tools_1.6.0-2_armhf.deb
 
 #apt-get --fix-missing
 
