@@ -35,4 +35,4 @@ RELEASE="2.1.0"
 
 # Choice of the filesystem. Check the main script for the possible
 # valid values, which are currently at least XFS and F2FS (literally)
-FILESYSTEM="XFS"
+FILESYSTEM="F2FS"

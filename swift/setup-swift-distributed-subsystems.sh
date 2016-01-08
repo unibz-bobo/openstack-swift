@@ -12,6 +12,13 @@
 # (C) 2014 Lorenzo Miori
 #   Bachelor Thesis Project: middleware deployment and evaluation of a Raspberry Cluster
 
+echo "===================================="
+echo "Starting something big..."
+echo "In the meantime enjoy a moment of wisdom"
+echo "Never - ever - rely on default values if they are valuable and critical"
+echo "Trust me, not as engineer, nor as expert, but as poor's man debug advisor"
+echo "===================================="
+
 # At least for initial debugging, turn echoing of commands on
 set -x
 
@@ -187,7 +194,9 @@ STORAGE_HOSTS=$ACCOUNT_HOSTS" "$CONTAINER_HOSTS" "$OBJECT_HOSTS
 
 isRoot
 
-# install dependencies
+# install dependencies: the policy here is just install; does not matter
+# if a package for whatever reason is not used in the end (e.g. option not used)
+# ...better safe than sorry!
 apt-get update
 getPackage python-software-properties
 #add-apt-repository ppa:swift-core/release
@@ -199,8 +208,14 @@ getPackage openssl
 getPackage python-pip
 getPackage libffi-dev
 getPackage python-dev
-getPackage xfsprogs
 getPackage rsync
+
+# supported filesystem tools: XFS;F2FS; mainly to provide mkfs.xyz
+getPackage xfsprogs
+## getPackage f2fs-tools --> deprecated; only available on debian whizzy!?!?!?##
+dpkg -i ftp.acc.umu.se/mirror/raspbian/raspbian/pool/main/f/f2fs-tools/libf2fs0_1.6.0-2_armhf.deb
+dpkg -i ftp.acc.umu.se/mirror/raspbian/raspbian/pool/main/f/f2fs-tools/f2fs-tools_1.6.0-2_armhf.deb
+
 #apt-get --fix-missing
 
 # Clone and fetch the defined OpenStack Swift(-client) Release
@@ -590,7 +605,10 @@ fi
 
             "F2FS" )
                 echo "F2FS Filesystem has been selected"
-                echo "STUB! ABORTING!"
+                # create and format filesystem
+                mkfs.f2fs $STORAGE_DISK
+                # add fstab entry for the specific filesystem
+                echo "$STORAGE_DISK /srv/node/sdb1 f2fs noatime,nodiratime,flush_merge,inline_xattr 0 0" >> /etc/fstab
                 exit 1
             ;;
             
