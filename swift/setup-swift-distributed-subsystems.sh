@@ -551,26 +551,72 @@ fi
 
         # For every device on the node, setup the XFS volume (/dev/sdb is used as an example), add mounting option inode64 when your disk is bigger than 1TB to archive a better performance.
 
+        # Check if a specific filesystem has been chosen. defaults to "XFS"
+
+        if [ -z $FILESYSTEM ]
+        then
+            # If no filesystem is specified, default it to "XFS"
+            FILESYSTEM="XFS"
+        fi
+
         STORAGE_DISK="/swift-storage"
-        ## cleanup if needed
+        ## cleanup and basic setup (filesystem generic)
         umount /srv/node/sdb1
         rm -f $STORAGE_DISK
         rm -R -f /srv/node/sdb1
-        ##
-        truncate -s 2048M $STORAGE_DISK
-        mkfs.xfs -i size=1024 $STORAGE_DISK
-#        mkfs.ext2 -F $STORAGE_DISK
+
+        # remove the (potentially existing) filesystem entry
         cp /etc/fstab /etc/fstab.backup
         sed '/^\/swift-storage/d' /etc/fstab > /etc/fstab.new
         cp /etc/fstab.new /etc/fstab
-#        grep $STORAGE_DISK /etc/fstab
-#        if [ $? = 1 ]
-#        then
-#            echo "$STORAGE_DISK /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
-#        fi
+
+        # allocate filesystem image space (filesystem generic)
+        truncate -s 2048M $STORAGE_DISK
+        
+        # prepare mount point
         mkdir -p /srv/node/sdb1
-        echo "$STORAGE_DISK /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
+
+        ## end of basic setup (filesystem generic)
+
+        case "$FILESYSTEM" in
+
+            "XFS" )
+                echo "XFS Filesystem has been selected"
+                # create and format filesystem
+                mkfs.xfs -i size=1024 $STORAGE_DISK
+                # add fstab entry for the specific filesystem
+                echo "$STORAGE_DISK /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
+            ;;
+
+            "F2FS" )
+                echo "F2FS Filesystem has been selected"
+                echo "STUB! ABORTING!"
+                exit 1
+            ;;
+            
+            "EXT4" )
+                echo "EXT4 Filesystem has been selected"
+                echo "STUB! ABORTING!"
+                exit 1
+            ;;
+            
+            "ROOTFS" )
+                echo "ROOTFS Filesystem has been selected"
+                echo "STUB! ABORTING!"
+                exit 1
+            ;;
+
+            * )
+                echo "Unknown filesystem selected -$FILESYSTEM- [ XFS | F2FS | EXT4 | ROOTFS ]. Aborting."
+                exit 1
+            ;;
+
+        esac
+
+        # mount the freshly created filesystem
         mount $STORAGE_DISK
+
+        # swift owns (its) world
         chown swift:swift -R /srv/node
 
         # clean some stuff up!
