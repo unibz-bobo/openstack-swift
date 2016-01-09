@@ -586,7 +586,7 @@ fi
         cp /etc/fstab.new /etc/fstab
 
         # allocate filesystem image space (filesystem generic)
-        truncate -s 2048M $STORAGE_DISK
+        truncate -s 1024M $STORAGE_DISK
         
         # prepare mount point
         mkdir -p /srv/node/sdb1
