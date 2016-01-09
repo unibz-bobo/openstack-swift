@@ -22,7 +22,7 @@ OBJECT_HOSTS="10.10.241.205 10.10.241.206"
 
 # does the script have to create separate zones ?
 # at the moment, a zone is a single group account-container-object
-CREATE_ZONES=2
+CREATE_ZONES=1
 
 # Replication count
 REPLICATION=2
@@ -31,8 +31,8 @@ REPLICATION=2
 PARTITIONS=7
 
 # OpenStack Swift Release (NOTE: this is the git tag name)
-RELEASE="2.1.0"
+RELEASE="2.5.0"
 
 # Choice of the filesystem. Check the main script for the possible
 # valid values, which are currently at least XFS and F2FS (literally)
-FILESYSTEM="F2FS"
+FILESYSTEM="XFS"
