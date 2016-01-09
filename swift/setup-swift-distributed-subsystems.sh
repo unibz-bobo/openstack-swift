@@ -577,7 +577,9 @@ fi
         STORAGE_DISK="/swift-storage"
         ## cleanup and basic setup (filesystem generic)
         umount /srv/node/sdb1
+        umount -f -l /srv/node/sdb1 # force and lazy umount if everything fails -> gives a chance to build fresh FS anyway
         rm -f $STORAGE_DISK
+        # cleanup of eventual objects that went in the ROOTFS tree
         rm -R -f /srv/node/sdb1
 
         # remove the (potentially existing) filesystem entry
@@ -600,7 +602,7 @@ fi
                 # create and format filesystem
                 mkfs.xfs -i size=1024 $STORAGE_DISK
                 # add fstab entry for the specific filesystem
-                echo "$STORAGE_DISK /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
+                echo "$STORAGE_DISK /srv/node/sdb1 xfs loop,noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
             ;;
 
             "F2FS" )
@@ -608,7 +610,7 @@ fi
                 # create and format filesystem
                 mkfs.f2fs $STORAGE_DISK
                 # add fstab entry for the specific filesystem
-                echo "$STORAGE_DISK /srv/node/sdb1 f2fs noatime,nodiratime,flush_merge,inline_xattr 0 0" >> /etc/fstab
+                echo "$STORAGE_DISK /srv/node/sdb1 f2fs loop,noatime,nodiratime,flush_merge,inline_xattr 0 0" >> /etc/fstab
             ;;
             
             "EXT4" )
