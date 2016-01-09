@@ -609,7 +609,6 @@ fi
                 mkfs.f2fs $STORAGE_DISK
                 # add fstab entry for the specific filesystem
                 echo "$STORAGE_DISK /srv/node/sdb1 f2fs noatime,nodiratime,flush_merge,inline_xattr 0 0" >> /etc/fstab
-                exit 1
             ;;
             
             "EXT4" )
