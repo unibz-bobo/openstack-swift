@@ -233,7 +233,9 @@ cd ~/python-swiftclient
 # hard cleanup and checkout to latest stuff #
 git checkout master
 git reset --hard origin/master
+git pull
 git pull origin master
+git fetch --tags
 git checkout tags/$RELEASE
 ###
 sudo pip install .
@@ -244,7 +246,9 @@ cd ~/swift
 # hard cleanup and checkout to latest stuff #
 git checkout master
 git reset --hard origin/master
+git pull
 git pull origin master
+git fetch --tags
 git checkout tags/$RELEASE
 ###
 sudo pip install .
