@@ -227,15 +227,27 @@ then
     RELEASE="2.1.0"
 fi
 
-cd && git clone git://github.com/openstack/python-swiftclient.git
+cd
+git clone git://github.com/openstack/python-swiftclient.git
 cd ~/python-swiftclient
-git pull origin master && git checkout tags/$RELEASE && sudo pip install .
+# hard cleanup and checkout to latest stuff #
+git checkout master
+git reset --hard origin/master
+git pull origin master
+git checkout tags/$RELEASE
+###
+sudo pip install .
 
-#set +e
-cd && git clone git://github.com/openstack/swift.git
-#set -e
+cd
+git clone git://github.com/openstack/swift.git
 cd ~/swift
-git pull origin master && git checkout tags/$RELEASE && sudo pip install .
+# hard cleanup and checkout to latest stuff #
+git checkout master
+git reset --hard origin/master
+git pull origin master
+git checkout tags/$RELEASE
+###
+sudo pip install .
 
 ## Generic
 
