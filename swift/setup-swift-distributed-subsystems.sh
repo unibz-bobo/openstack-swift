@@ -336,6 +336,12 @@ service rsync stop
 killall rsync
 rm /var/run/rsyncd.pid
 
+# get deployment variables if set, otherwise use default values
+if [ -z $PROXY_WORKERS ]
+then
+    PROXY_WORKERS="1"
+fi
+
 case "$NODE_TYPE" in
 
     "$NODE_TYPE_PROXY" )

@@ -4,7 +4,7 @@ source configuration-default.sh
 
 set +x
 
-mkdir logs
+mkdir -p logs
 
 cp load_balancer/haproxy_template.cfg load_balancer/haproxy.cfg.tmp
 i=0
