@@ -161,6 +161,9 @@ then
     HOST_IP=`LANG=C ifconfig wlan0 | awk '/inet addr/ {split ($2,A,":"); print A[2]}'`
 fi
 
+# retrieve the number of CPU core to assign as much processeses as possible
+CPU_CORES_NUM=`cat /proc/cpuinfo | grep -P "processor\t:" | wc -l`
+
 # specific settings for proxy
 #PROXY_HOSTS="10.10.242.97 10.10.242.98 10.10.242.99"
 
@@ -336,16 +339,10 @@ service rsync stop
 killall rsync
 rm /var/run/rsyncd.pid
 
-# get deployment variables if set, otherwise use default values
-if [ -z $PROXY_WORKERS ]
-then
-    PROXY_WORKERS="1"
-fi
-
 case "$NODE_TYPE" in
 
     "$NODE_TYPE_PROXY" )
-        echo "Installing a proxy node"
+        echo "Installing a proxy node with $CPU_CORES_NUM CPU cores (:= spawn processes)"
 
         echo "Quitting running instances..."
         # Cleanup any running instance, if any
@@ -377,7 +374,7 @@ bind_ip = 0.0.0.0
 bind_port = 8080
 bind_timeout = 30
 # pre-forked processes. No more than 1 on the Raspberry ...
-workers = 1
+workers = $CPU_CORES_NUM
 user = swift
 #expiring_objects_container_divisor = 86400
 #cert_file = /etc/swift/cert.crt
@@ -559,7 +556,7 @@ fi
     ;;
 
     "$NODE_TYPE_STORAGE" )
-        echo "Installing a storage node"
+        echo "Installing a storage node with $CPU_CORES_NUM CPU cores (:= spawned processes)"
 
         echo "Quitting running instances..."
 
@@ -714,7 +711,7 @@ devices = /srv/node
 user = swift
 bind_ip = $HOST_IP
 bind_port = 6002
-workers = 1
+workers = $CPU_CORES_NUM
 db_preallocation = off
 
 [pipeline:main]
@@ -740,7 +737,7 @@ devices = /srv/node
 user = swift
 bind_ip = $HOST_IP
 bind_port = 6001
-workers = 1
+workers = $CPU_CORES_NUM
 db_preallocation = off
 
 [pipeline:main]
@@ -768,7 +765,7 @@ devices = /srv/node
 user = swift
 bind_ip = $HOST_IP
 bind_port = 6000
-workers = 1
+workers = $CPU_CORES_NUM
 db_preallocation = off
 mount_check = false
 
