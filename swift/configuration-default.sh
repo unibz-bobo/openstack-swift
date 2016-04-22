@@ -1,1 +1,1 @@
-source configurations/boboRPI2RPI1.sh
+source configurations/bozen.sh

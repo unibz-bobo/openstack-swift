@@ -5,7 +5,6 @@ cd $(dirname $0)/..
 source configuration-default.sh
 
 # Authentication URL
-#URL_AUTHENTICATION="http://localhost:8080/auth/v1.0/"
 URL_AUTHENTICATION="http://$LOAD_BALANCER:8080/auth/v1.0/"
 
 # Authentication user

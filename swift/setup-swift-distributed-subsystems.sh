@@ -12,6 +12,8 @@
 # (C) 2014 Lorenzo Miori
 #   Bachelor Thesis Project: middleware deployment and evaluation of a Raspberry Cluster
 
+#
+
 echo "===================================="
 echo "Starting something big..."
 echo "In the meantime enjoy a moment of wisdom"
@@ -177,8 +179,23 @@ CPU_CORES_NUM=`cat /proc/cpuinfo | grep -P "processor\t:" | wc -l`
 # at the moment, a zone is a single group account-container-object
 #CREATE_ZONES=0
 
+SSD_PARTITION_PATH=""
+
 # include the configuration parameters
 source configuration-default.sh
+
+SSD_ENABLED="0"
+STORAGE_LOOP="1"
+
+if [ -e "$SSD_PARTITION_PATH" ]
+then
+    echo "SSD path exists: assumed to be using it."
+    SSD_ENABLED="1"
+    STORAGE_LOOP="0"
+else
+    SSD_ENABLED="0"
+    STORAGE_LOOP="1"
+fi
 
 # group all devices for future use
 STORAGE_HOSTS=$ACCOUNT_HOSTS" "$CONTAINER_HOSTS" "$OBJECT_HOSTS
@@ -593,11 +610,9 @@ fi
             FILESYSTEM="XFS"
         fi
 
-        STORAGE_DISK="/swift-storage"
         ## cleanup and basic setup (filesystem generic)
         umount /srv/node/sdb1
         umount -f -l /srv/node/sdb1 # force and lazy umount if everything fails -> gives a chance to build fresh FS anyway
-        rm -f $STORAGE_DISK
         # cleanup of eventual objects that went in the ROOTFS tree
         rm -R -f /srv/node/sdb1
 
@@ -606,9 +621,24 @@ fi
         sed '/^\/swift-storage/d' /etc/fstab > /etc/fstab.new
         cp /etc/fstab.new /etc/fstab
 
-        # allocate filesystem image space (filesystem generic)
-        truncate -s 1024M $STORAGE_DISK
+        # remove the (potentially existing) SSD filesystem entry
+        cp /etc/fstab /etc/fstab.backup
+        sed "\@^/dev/sda1@d" /etc/fstab > /etc/fstab.new
+        cp /etc/fstab.new /etc/fstab
+
+        if [ $SSD_ENABLED = "0" ]
+            STORAGE_DISK="/swift-storage"
+        then
+            STORAGE_DISK="$SSD_PARTITION_PATH"
+        fi
         
+        if [ "$STORAGE_LOOP" = "1" ]
+        then
+            rm -f $STORAGE_DISK
+            # allocate filesystem image space (filesystem generic)
+            truncate -s 1024M $STORAGE_DISK
+        fi
+
         # prepare mount point
         mkdir -p /srv/node/sdb1
 
@@ -619,9 +649,15 @@ fi
             "XFS" )
                 echo "XFS Filesystem has been selected"
                 # create and format filesystem
-                mkfs.xfs -i size=1024 $STORAGE_DISK
-                # add fstab entry for the specific filesystem
-                echo "$STORAGE_DISK /srv/node/sdb1 xfs loop,noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
+                mkfs.xfs -f -i size=1024 $STORAGE_DISK
+                if [ "$STORAGE_LOOP" = "1" ]
+                then
+                    # add fstab entry for the specific filesystem
+                    echo "$STORAGE_DISK /srv/node/sdb1 xfs loop,noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
+                else
+                    # add fstab entry for the specific filesystem
+                    echo "$STORAGE_DISK /srv/node/sdb1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 0" >> /etc/fstab
+                fi
             ;;
 
             "F2FS" )
@@ -629,7 +665,12 @@ fi
                 # create and format filesystem
                 mkfs.f2fs $STORAGE_DISK
                 # add fstab entry for the specific filesystem
-                echo "$STORAGE_DISK /srv/node/sdb1 f2fs loop,noatime,nodiratime 0 0" >> /etc/fstab
+                if [ "$STORAGE_LOOP" = "1" ]
+                then
+                    echo "$STORAGE_DISK /srv/node/sdb1 f2fs loop,noatime,nodiratime 0 0" >> /etc/fstab
+                else
+                    echo "$STORAGE_DISK /srv/node/sdb1 f2fs noatime,nodiratime 0 0" >> /etc/fstab
+                fi
             ;;
             
             "EXT4" )
@@ -872,6 +913,16 @@ EOF
     then
         swift-init proxy restart
     fi
+    
+    # Do not forget also to restart the other proxies, if
+    # other services are being installed on them as well
+    for i in $PROXY_HOSTS
+    do
+        if [ "$HOST_IP" == "$i" ]
+        then
+            swift-init proxy restart
+        fi
+    done
 #Or, if you want to start them one at a time, run them as below. Note that if the server program in question generates any output on its stdout or stderr, swift-init has already redirected the command’s output to /dev/null. If you encounter any difficulty, stop the server and run it by hand from the command line. Any server may be started using “swift-$SERVER-$SERVICE /etc/swift/$SERVER-config”, where $SERVER might be object, continer, or account, and $SERVICE might be server, replicator, updater, or auditor.
 
 # swift-init object-server start
