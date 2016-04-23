@@ -187,14 +187,16 @@ source configuration-default.sh
 SSD_ENABLED="0"
 STORAGE_LOOP="1"
 
-if [ -e "$SSD_PARTITION_PATH" ]
+if [ -b "$SSD_PARTITION_PATH" ]
 then
     echo "SSD path exists: assumed to be using it."
     SSD_ENABLED="1"
     STORAGE_LOOP="0"
+    STORAGE_DISK="$SSD_PARTITION_PATH"
 else
     SSD_ENABLED="0"
     STORAGE_LOOP="1"
+    STORAGE_DISK="/swift-storage"
 fi
 
 # group all devices for future use
@@ -626,12 +628,6 @@ fi
         sed "\@^/dev/sda1@d" /etc/fstab > /etc/fstab.new
         cp /etc/fstab.new /etc/fstab
 
-        if [ $SSD_ENABLED = "0" ]
-            STORAGE_DISK="/swift-storage"
-        then
-            STORAGE_DISK="$SSD_PARTITION_PATH"
-        fi
-        
         if [ "$STORAGE_LOOP" = "1" ]
         then
             rm -f $STORAGE_DISK
