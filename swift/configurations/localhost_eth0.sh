@@ -28,3 +28,13 @@ REPLICATION=3
 
 # Partition power (2^n)
 PARTITIONS=7
+
+# OpenStack Swift Release (NOTE: this is the git tag name)
+RELEASE="2.5.0"
+
+# Choice of the filesystem. Check the main script for the possible
+# valid values, which are currently at least XFS and F2FS (literally)
+FILESYSTEM="XFS"
+
+# Name here the path of the (S/H)DD if you are using one
+SSD_PARTITION_PATH=""
