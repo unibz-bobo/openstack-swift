@@ -1,1 +1,1 @@
-source configurations/bozen.sh
+source configurations/bozen001.sh
