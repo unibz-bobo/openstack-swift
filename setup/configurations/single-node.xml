@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Description:
+     Read filename
+ -->
+<cluster>
+    <swift>
+
+        <git-source>
+            <python-swiftclient>
+                <release>2.5.0</release>
+            </python-swiftclient>
+
+            <swift>
+                <release>2.5.0</release>
+            </swift>
+        </git-source>
+
+        <storage>
+            <block_device_path required="no"></block_device_path>
+            <filesystem>XFS</filesystem>
+        </storage>
+
+        <node>
+            <!--
+                 Does the script have to create separate zones?
+                 At the moment, a zone is a single group account-container-object.
+            -->
+            <create_zones>yes</create_zones>
+            <!-- Replication count. -->
+            <replication_count>1</replication_count>
+            <!-- Partiton power (2^n). -->
+            <partition_count>7</partition_count>
+        </node>
+
+        <balancer-server>
+            <node>
+                <ip_address>10.0.2.15</ip_address>
+            </node>
+        </balancer-server>
+
+        <!-- Specific settings for proxy. -->
+        <proxy-server>
+            <node>
+                <ip_address>10.0.2.15</ip_address>
+            </node>
+        </proxy-server>
+
+        <!-- Specific settings for storage. -->        
+        <account-server>
+            <node>
+                <ip_address>10.0.2.15</ip_address>
+            </node>
+        </account-server>
+
+        <container-server>
+            <node>
+                <ip_address>10.0.2.15</ip_address>
+            </node>
+        </container-server>
+
+        <object-server>
+            <node>
+                <ip_address>10.0.2.15</ip_address>
+            </node>
+        </object-server>        
+    </swift>
+</cluster>

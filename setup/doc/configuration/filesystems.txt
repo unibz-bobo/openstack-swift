@@ -1,0 +1,21 @@
+
+XFS
+===
+
+No particular worries.
+
+F2FS
+====
+
+A)
+
+To avoid nightmare debug session, you SHALL/MUST/HAVE TO/CANNOT AVOID/DOOMED OTHERWISE
+have the following attribute set in the kernel or otherwise find a 'king way to enable
+XATTRs on your system:
+
+CONFIG_F2FS_FS_XATTR=y
+
+B)
+
+For some reason, mkfs.f2fs does NOT accept a file loopback size greater than 1GiB.
+Need to investigate -> fails with cannot open device

@@ -1,0 +1,15 @@
+# robots.txt for http://ftp.acc.umu.se/
+# This file specifies what harvesting robots are allowed to index and not.
+#
+# For information on the format: 
+# http://info.webcrawler.com/mak/projects/robots/exclusion.html
+
+User-agent: *
+Disallow: /cdimage/
+Disallow: /cdimage/snapshot
+Disallow: /cdimage/.debian-mirror
+Disallow: /debian/pool
+Disallow: /ubuntu/pool
+Disallow: /mirror/debian/pool
+Disallow: /pub/debian/pool
+Disallow: /mirror/ubuntu/pool

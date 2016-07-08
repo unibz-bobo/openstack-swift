@@ -1,0 +1,17 @@
+ 
+##########
+Error 507 Insufficient storage from Object Server; Proxy relays a 503 Service Unavailable
+##########
+
+This error has the following possible causes:
+
+1) Disk is full. Nothing to add
+
+2) Host filesystem does NOT support XATTRs. XFS does them as default so this wasn't the problem, altough
+   several tests to assure that have been done.
+
+3) Damn libc fallocate wrapper! fallocate native function appears to be broken on the Raspbian (debian wheezy?) operating
+   system. A manual - and hopefully temporary - patch has been written to prefer posix_fallocate instead, which is
+   flawlessly working.
+
+   Absolutely obscure, a bug should be probably filled and submitted to the Openstack team.

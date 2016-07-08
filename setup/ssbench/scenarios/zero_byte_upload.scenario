@@ -1,0 +1,17 @@
+{
+  "name": "Zero-byte upload test",
+  "sizes": [{
+    "name": "zero",
+    "size_min": 0,
+    "size_max": 0
+  }],
+  "initial_files": {
+    "zero": 1
+  },
+  "operation_count": 500,
+  "crud_profile": [1, 0, 0, 0],
+  "user_count": 1,
+  "container_base": "ssbench",
+  "container_count": 100,
+  "container_concurrency": 10
+}

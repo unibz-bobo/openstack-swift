@@ -1,0 +1,22 @@
+{
+  "name": "Small test scenario",
+  "sizes": [{
+    "name": "tiny",
+    "size_min": 4096,
+    "size_max": 8192
+  }, {
+    "name": "small",
+    "size_min": 20000,
+    "size_max": 40000
+  }],
+  "initial_files": {
+    "tiny": 100,
+    "small": 10
+  },
+  "operation_count": 500,
+  "crud_profile": [10, 75, 15, 0],
+  "user_count": 4,
+  "container_base": "ssbench",
+  "container_count": 100,
+  "container_concurrency": 10
+}

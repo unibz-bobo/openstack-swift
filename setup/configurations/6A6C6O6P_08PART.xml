@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Description:
+     Read filename
+     Total nodes: 26 (24 in use)
+     6 Proxies ; 6 Accounts ; 6 Containers ; 6 Object
+     Single zone, single region
+ -->
+<cluster>
+    <swift>
+
+        <git-source>
+            <python-swiftclient>
+                <release>2.5.0</release>
+            </python-swiftclient>
+
+            <swift>
+                <release>2.5.0</release>
+            </swift>
+        </git-source>
+
+        <storage>
+            <block_device_path required="no"></block_device_path>
+            <filesystem>XFS</filesystem>
+        </storage>
+
+        <node>
+            <!--
+                 Does the script have to create separate zones?
+                 At the moment, a zone is a single group account-container-object.
+            -->
+            <create_zones>yes</create_zones>
+            <!-- Replication count. -->
+            <replication_count>3</replication_count>
+            <!-- Partiton power (2^n). -->
+            <partition_count>8</partition_count>
+        </node>
+
+        <balancer-server>
+            <node>
+                <ip_address>10.10.242.55</ip_address>
+            </node>
+        </balancer-server>
+
+        <!-- Specific settings for proxy. -->
+        <proxy-server>
+            <node>
+                <ip_address>10.10.242.97</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.12</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.10</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.47</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.53</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.11</ip_address>
+            </node>
+        </proxy-server>
+
+        <!-- Specific settings for storage. -->        
+        <account-server>
+            <node>
+                <ip_address>10.10.242.98</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.52</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.8</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.48</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.7</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.57</ip_address>
+            </node>
+        </account-server>
+
+        <container-server>
+            <node>
+                <ip_address>10.10.242.99</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.54</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.45</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.49</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.9</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.59</ip_address>
+            </node>
+        </container-server>
+
+        <object-server>
+            <node>
+                <ip_address>10.10.242.56</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.6</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.46</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.50</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.51</ip_address>
+            </node>
+            <node>
+                <ip_address>10.10.242.60</ip_address>
+            </node>
+        </object-server>        
+    </swift>
+</cluster>
