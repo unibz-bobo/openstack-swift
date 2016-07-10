@@ -2,7 +2,7 @@
 
 ## Quick guide
 
-1. Install a debian distribution (not tested on others yet)
+1. Install a Debian or Arch Linux distribution (not tested on others yet)
 2. Setup each node
   * Setup every node such that it gets assigned a **static IP** address
   * Create a new xml file within the **configurations** folder; you can look at/copy from existing files as examples for the new configuration
@@ -36,7 +36,7 @@ The final step is accomplished by running `$ ./cluster.benchmark.sh`
 This also takes some time. It will run a very small and a zero upload test scenario.
 At the end it will show you the results for througput in operations/second.
 
-### Services not starting ofter shutting down the nodes?
+### Services not starting after shutting down the nodes?
 
 Try to run `$ ./cluster.restart.sh`
 
