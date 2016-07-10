@@ -68,16 +68,8 @@ if [ "$ID_LIKE" = debian ]; then
   #apt-get --fix-missing
 elif [ "$ID_LIKE" = arch ]; then
   clusterGetPackage python2-pip
-  clusterGetPackage pkg-config # Needed for compiling python cffi.
   clusterGetPackage libffi
-  clusterGetPackage gcc # Needed for python compilation.
-  clusterGetPackage patch
-  # Following packages are needed for compiling liberasurecode.
-  clusterGetPackage autoconf
-  clusterGetPackage automake
-  clusterGetPackage libtool
-  clusterGetPackage make
-  #
+  pacman -S --noconfirm --needed base-devel
   serviceStop ntpd
   serviceStart ntpd
   serviceStop rsyncd
@@ -124,14 +116,20 @@ else
 fi
 
 if [ "$ID_LIKE" = arch ]; then
-  # Install dependency for PyECLib.
-  cd
-  git clone https://bitbucket.org/tsg-/liberasurecode.git
-  cd liberasurecode
-  ./autogen.sh
-  ./configure
-  make
-  make install
+  packageQuery liberasurecode
+  if [ "$?" != 0 ]; then
+    # Install dependency for PyECLib.
+    cd
+    git clone https://aur.archlinux.org/liberasurecode.git
+    cd liberasurecode
+    # Hacky workaround to let makepkg build something with the root user.
+    chown -R nobody:nobody .
+    echo 'nobody ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/makepkg-liberasurecode
+    sudo -u nobody makepkg -sir --noconfirm
+    rm /etc/sudoers.d/makepkg-liberasurecode
+    chown -R root:root .
+    # Who had the great idea to remove --asroot from makepkg?
+  fi
 fi
 
 # Clone and fetch the defined OpenStack Swift(-client) Release
