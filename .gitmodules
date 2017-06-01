@@ -1,0 +1,6 @@
+[submodule "setup/swman"]
+	path = setup/swman
+	url = https://github.com/unibz-bobo/swman.git
+[submodule "setup/yjl"]
+	path = setup/yjl
+	url = https://github.com/unibz-bobo/log.sh.git
